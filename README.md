@@ -1,9 +1,9 @@
-USTH ICT 2017 Android Development
+USTH ICT 2017 Android Development - GROUP 7
 =====================================
 
 Students are expected to:
 * Fork this repository to your github account
-* Create new project with Android Studio / Eclipse ADT
+* Create new project with **Android Studio**  / Eclipse ADT
 * Append name (and purpose) of your project to this README file
 * Push your commits regularly, with **proper** commit messages
 
@@ -11,9 +11,11 @@ Students are expected to:
 Member list
 =====================================
 
-*Add student list of your group here*
+* **Tran Trong Khanh** - *USTHBI5-062* 
+* **Ngo Sy Tung Lam** - *USTHBI5-065* 
+* **To Minh Son** - *USTHBI5-119*
 
 Project description
 =====================================
 
-*Add your project description here*
+* ***Project 5***: *Twitter Client*
