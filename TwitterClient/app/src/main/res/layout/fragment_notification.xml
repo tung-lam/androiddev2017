@@ -233,6 +233,58 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
+        android:layout_height="81dp">
+
+        <ImageView
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            app:srcCompat="@drawable/avt2"
+            android:id="@+id/imageView2"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/imageView"
+            android:layout_toEndOf="@+id/imageView"
+            android:layout_marginLeft="14dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="11dp" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            app:srcCompat="@drawable/user"
+            android:layout_marginLeft="60dp"
+            android:layout_marginStart="60dp"
+            android:id="@+id/imageView"
+            android:layout_alignTop="@+id/imageView2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="Luke Sean"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView2"
+            android:layout_alignLeft="@+id/imageView2"
+            android:layout_alignStart="@+id/imageView2"
+            android:layout_marginTop="12dp"
+            android:id="@+id/textView5" />
+
+        <TextView
+            android:text="followed you"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView6"
+            android:layout_alignBaseline="@+id/textView5"
+            android:layout_alignBottom="@+id/textView5"
+            android:layout_toRightOf="@+id/textView5"
+            android:layout_toEndOf="@+id/textView5"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="44dp"
         android:layout_weight="0.07"
         android:layout_marginTop="20dp">
