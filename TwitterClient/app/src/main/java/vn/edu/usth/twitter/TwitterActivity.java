@@ -1,14 +1,19 @@
 package vn.edu.usth.twitter;
 
+import android.graphics.drawable.Drawable;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.content.ContextCompat;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.text.Spannable;
+import android.text.SpannableString;
+import android.text.style.ImageSpan;
 import android.view.Menu;
 import android.view.MenuItem;
 
@@ -36,6 +41,12 @@ public class TwitterActivity extends AppCompatActivity {
         setSupportActionBar(myToolbar);
     }
 
+    private int[] imageResId = {
+            R.drawable.home,
+            R.drawable.retweet,
+            R.drawable.message
+    };
+
     public class HomeFragmentPagerAdapter extends FragmentPagerAdapter {
         private final int PAGE_COUNT = 3;
         private String titles[] = new String[] { "Home", "Notification", "Message" };
@@ -59,9 +70,16 @@ public class TwitterActivity extends AppCompatActivity {
 //        return new EmptyFragment(); // failsafe
         }
         @Override
-        public CharSequence getPageTitle(int page) {
+        public CharSequence getPageTitle(int position) {
 // returns a tab title corresponding to the specified page
-            return titles[page];
+
+            Drawable image = ContextCompat.getDrawable(getApplicationContext(), imageResId[position]);
+            image.setBounds(0, 0, image.getIntrinsicWidth()-32, image.getIntrinsicHeight()-32);
+
+            SpannableString sb = new SpannableString(" ");
+            ImageSpan imageSpan = new ImageSpan(image, ImageSpan.ALIGN_BOTTOM);
+            sb.setSpan(imageSpan, 0, 1, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+            return sb;
         }
     }
 
