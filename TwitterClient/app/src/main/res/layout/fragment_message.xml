@@ -6,7 +6,7 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="100dp">
+        android:layout_height="120dp">
 
         <ImageView
             android:layout_width="65dp"
@@ -29,6 +29,7 @@
             android:layout_toEndOf="@+id/imageView3"
             android:layout_marginLeft="10dp"
             android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
             android:id="@+id/name" />
 
         <TextView
@@ -41,7 +42,31 @@
             android:layout_alignBaseline="@+id/name"
             android:layout_alignBottom="@+id/name"
             android:layout_toRightOf="@+id/name"
-            android:layout_toEndOf="@+id/name" />
+            android:layout_toEndOf="@+id/name"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:text="5m"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/time"
+            android:layout_alignBaseline="@+id/user_id"
+            android:layout_alignBottom="@+id/user_id"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="11dp"
+            android:layout_marginEnd="11dp" />
+
+        <TextView
+            android:text="Hello, are u free this afternoon?"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/message_content"
+            android:layout_alignBottom="@+id/imageView3"
+            android:layout_alignLeft="@+id/name"
+            android:layout_alignStart="@+id/name"
+            android:height="30dp"
+            android:textColor="@color/black"/>
 
     </RelativeLayout>
 
