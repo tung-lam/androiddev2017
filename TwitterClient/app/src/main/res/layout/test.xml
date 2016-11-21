@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_weight="0.07"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:layout_width="68dp"
+            android:layout_height="68dp"
+            app:srcCompat="@drawable/tweet"
+            android:id="@+id/tweet"
+            android:layout_weight="0.28"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_alignParentTop="true" />
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="102dp"
+            android:layout_weight="0.06">
+
+            <ImageView
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/avt1"
+                android:id="@+id/avt"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:text="Tùng Lâm"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/avt"
+                android:layout_toRightOf="@+id/avt"
+                android:layout_toEndOf="@+id/avt"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:id="@+id/textView1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView2"
+                android:text=" @ngstnglm - 1d"
+                android:textSize="12dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_alignBaseline="@+id/textView1"
+                android:layout_alignBottom="@+id/textView1"
+                android:layout_toRightOf="@+id/textView1"
+                android:layout_toEndOf="@+id/textView1" />
+
+            <TextView
+                android:text="reply to Khanh"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView3"
+                android:layout_alignBaseline="@+id/textView4"
+                android:layout_alignBottom="@+id/textView4"
+                android:layout_toRightOf="@+id/textView4"
+                android:layout_toEndOf="@+id/textView4"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp" />
+
+            <TextView
+                android:text=" @khanhtrannnn"
+                android:textColor="@color/blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView4"
+                android:layout_below="@+id/textView1"
+                android:layout_alignLeft="@+id/textView1"
+                android:layout_alignStart="@+id/textView1"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="-5dp"/>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                app:srcCompat="@drawable/arrow_down"
+                android:id="@+id/arrow_down1"
+                android:layout_alignTop="@+id/textView1"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:weightSum="1"
+                android:layout_below="@+id/avt"
+                android:layout_alignLeft="@+id/textView1"
+                android:layout_alignStart="@+id/textView1">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    app:srcCompat="@drawable/reply"
+                    android:id="@+id/reply" />
+
+                <ImageView
+                    android:layout_width="127dp"
+                    android:layout_height="18dp"
+                    app:srcCompat="@drawable/retweet"
+                    android:id="@+id/retweet"/>
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    app:srcCompat="@drawable/heart"
+                    android:id="@+id/heart"
+                    android:layout_weight="0.04" />
+
+                <ImageView
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    app:srcCompat="@drawable/message"
+                    android:id="@+id/message"
+                    android:layout_weight="0.9"
+                    />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:id="@+id/border_line"
+            android:background="@drawable/border_style"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="102dp"
+            android:layout_weight="0.06">
+
+            <ImageView
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/avt2"
+                android:id="@+id/avt"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:text="Luke Sean"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/avt"
+                android:layout_toRightOf="@+id/avt"
+                android:layout_toEndOf="@+id/avt"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:id="@+id/textView1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView2"
+                android:text=" @LukeDaDD - 2d"
+                android:textSize="12dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_alignBaseline="@+id/textView1"
+                android:layout_alignBottom="@+id/textView1"
+                android:layout_toRightOf="@+id/textView1"
+                android:layout_toEndOf="@+id/textView1" />
+
+            <TextView
+                android:text="Hello"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView3"
+                android:layout_alignBaseline="@+id/textView4"
+                android:layout_alignBottom="@+id/textView4"
+                android:layout_toRightOf="@+id/textView4"
+                android:layout_toEndOf="@+id/textView4"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp" />
+
+            <TextView
+                android:text=" @khanhtrannnn"
+                android:textColor="@color/blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView4"
+                android:layout_below="@+id/textView1"
+                android:layout_alignLeft="@+id/textView1"
+                android:layout_alignStart="@+id/textView1"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="-5dp"/>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                app:srcCompat="@drawable/arrow_down"
+                android:id="@+id/arrow_down1"
+                android:layout_alignTop="@+id/textView1"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:weightSum="1"
+                android:layout_below="@+id/avt"
+                android:layout_alignLeft="@+id/textView1"
+                android:layout_alignStart="@+id/textView1">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    app:srcCompat="@drawable/reply"
+                    android:id="@+id/reply" />
+
+                <ImageView
+                    android:layout_width="127dp"
+                    android:layout_height="18dp"
+                    app:srcCompat="@drawable/retweet"
+                    android:id="@+id/retweet"/>
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    app:srcCompat="@drawable/heart"
+                    android:id="@+id/heart"
+                    android:layout_weight="0.04" />
+
+                <ImageView
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    app:srcCompat="@drawable/message"
+                    android:id="@+id/message"
+                    android:layout_weight="0.9" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:id="@+id/border_line"
+            android:background="@drawable/border_style"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="81dp">
+
+            <ImageView
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                app:srcCompat="@drawable/avt2"
+                android:id="@+id/imageView2"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/imageView"
+                android:layout_toEndOf="@+id/imageView"
+                android:layout_marginLeft="14dp"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="11dp" />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                app:srcCompat="@drawable/user"
+                android:layout_marginLeft="60dp"
+                android:layout_marginStart="60dp"
+                android:id="@+id/imageView"
+                android:layout_alignTop="@+id/imageView2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:text="Luke Sean"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView2"
+                android:layout_alignLeft="@+id/imageView2"
+                android:layout_alignStart="@+id/imageView2"
+                android:layout_marginTop="12dp"
+                android:id="@+id/textView5" />
+
+            <TextView
+                android:text="followed you"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView6"
+                android:layout_alignBaseline="@+id/textView5"
+                android:layout_alignBottom="@+id/textView5"
+                android:layout_toRightOf="@+id/textView5"
+                android:layout_toEndOf="@+id/textView5"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:id="@+id/border_line"
+            android:background="@drawable/border_style"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="81dp">
+
+            <ImageView
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                app:srcCompat="@drawable/avt1"
+                android:id="@+id/imageView2"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/imageView"
+                android:layout_toEndOf="@+id/imageView"
+                android:layout_marginLeft="14dp"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="11dp" />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                app:srcCompat="@drawable/user"
+                android:layout_marginLeft="60dp"
+                android:layout_marginStart="60dp"
+                android:id="@+id/imageView"
+                android:layout_alignTop="@+id/imageView2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:text="Tùng Lâm"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView2"
+                android:layout_alignLeft="@+id/imageView2"
+                android:layout_alignStart="@+id/imageView2"
+                android:layout_marginTop="12dp"
+                android:id="@+id/textView5" />
+
+            <TextView
+                android:text="followed you"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView6"
+                android:layout_alignBaseline="@+id/textView5"
+                android:layout_alignBottom="@+id/textView5"
+                android:layout_toRightOf="@+id/textView5"
+                android:layout_toEndOf="@+id/textView5"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp" />
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+</FrameLayout>
