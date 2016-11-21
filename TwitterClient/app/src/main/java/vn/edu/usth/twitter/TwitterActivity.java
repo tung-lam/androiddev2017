@@ -41,9 +41,9 @@ public class TwitterActivity extends AppCompatActivity {
         setSupportActionBar(myToolbar);
     }
 
-    private int[] imageResId = {
+    private int[] imageResId = new int[]{
             R.drawable.home,
-            R.drawable.retweet,
+            R.drawable.notification,
             R.drawable.message
     };
 
