@@ -2,8 +2,9 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:weightSum="1">
 
     <FrameLayout
@@ -19,7 +20,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical" >
+                android:orientation="vertical">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -28,121 +29,121 @@
                     android:paddingBottom="5dp">
 
                     <ImageView
+                        android:id="@+id/avt1"
                         android:layout_width="65dp"
                         android:layout_height="65dp"
-                        app:srcCompat="@drawable/avt1"
-                        android:id="@+id/avt1"
+                        android:layout_marginLeft="10dp"
                         android:layout_marginTop="10dp"
-                        android:layout_marginLeft="10dp"/>
+                        app:srcCompat="@drawable/avt1" />
 
                     <TextView
-                        android:text="Tùng Lâm"
-                        android:textStyle="bold"
-                        android:textColor="@color/black"
+                        android:id="@+id/textView1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignTop="@+id/avt1"
-                        android:layout_toRightOf="@+id/avt1"
-                        android:layout_toEndOf="@+id/avt1"
                         android:layout_marginLeft="15dp"
                         android:layout_marginStart="15dp"
-                        android:id="@+id/textView1" />
+                        android:layout_toEndOf="@+id/avt1"
+                        android:layout_toRightOf="@+id/avt1"
+                        android:text="Tùng Lâm"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
 
                     <TextView
+                        android:id="@+id/textView2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/textView2"
-                        android:text=" @ngstnglm - 1d"
-                        android:textSize="12dp"
-                        android:layout_marginLeft="5dp"
-                        android:layout_marginStart="5dp"
                         android:layout_alignBaseline="@+id/textView1"
                         android:layout_alignBottom="@+id/textView1"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_toEndOf="@+id/textView1"
                         android:layout_toRightOf="@+id/textView1"
-                        android:layout_toEndOf="@+id/textView1" />
+                        android:text=" @ngstnglm - 1d"
+                        android:textSize="12dp" />
 
                     <TextView
-                        android:text="reply to Khanh"
-                        android:textColor="@color/black"
+                        android:id="@+id/textView3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/textView3"
                         android:layout_alignBaseline="@+id/textView4"
                         android:layout_alignBottom="@+id/textView4"
-                        android:layout_toRightOf="@+id/textView4"
-                        android:layout_toEndOf="@+id/textView4"
                         android:layout_marginLeft="10dp"
-                        android:layout_marginStart="10dp" />
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/textView4"
+                        android:layout_toRightOf="@+id/textView4"
+                        android:text="reply to Khanh"
+                        android:textColor="@color/black" />
 
                     <TextView
-                        android:text=" @khanhtrannnn"
-                        android:textColor="@color/blue"
+                        android:id="@+id/textView4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/textView4"
-                        android:layout_below="@+id/textView1"
                         android:layout_alignLeft="@+id/textView1"
                         android:layout_alignStart="@+id/textView1"
+                        android:layout_below="@+id/textView1"
+                        android:layout_marginLeft="-5dp"
                         android:layout_marginTop="8dp"
-                        android:layout_marginLeft="-5dp"/>
+                        android:text=" @khanhtrannnn"
+                        android:textColor="@color/blue" />
 
                     <ImageView
+                        android:id="@+id/arrow_down1"
                         android:layout_width="20dp"
                         android:layout_height="20dp"
-                        app:srcCompat="@drawable/arrow_down"
-                        android:id="@+id/arrow_down1"
-                        android:layout_alignTop="@+id/textView1"
+                        android:layout_alignParentEnd="true"
                         android:layout_alignParentRight="true"
-                        android:layout_alignParentEnd="true" />
+                        android:layout_alignTop="@+id/textView1"
+                        app:srcCompat="@drawable/arrow_down" />
 
                     <LinearLayout
-                        android:orientation="horizontal"
                         android:layout_width="match_parent"
                         android:layout_height="15dp"
-                        android:layout_below="@+id/avt1"
                         android:layout_alignLeft="@+id/avt1"
                         android:layout_alignStart="@+id/avt1"
+                        android:layout_below="@+id/avt1"
                         android:layout_marginLeft="44dp"
-                        android:layout_marginStart="44dp">
+                        android:layout_marginStart="44dp"
+                        android:orientation="horizontal">
 
                         <ImageView
+                            android:id="@+id/reply"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            app:srcCompat="@drawable/reply"
-                            android:id="@+id/reply" />
+                            app:srcCompat="@drawable/reply" />
 
                         <ImageView
+                            android:id="@+id/retweet"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            app:srcCompat="@drawable/retweet"
-                            android:id="@+id/retweet"/>
+                            app:srcCompat="@drawable/retweet" />
 
                         <ImageView
+                            android:id="@+id/heart"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            app:srcCompat="@drawable/heart"
-                            android:id="@+id/heart" />
+                            app:srcCompat="@drawable/heart" />
 
                         <ImageView
+                            android:id="@+id/message"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            app:srcCompat="@drawable/message"
-                            android:id="@+id/message" />
+                            app:srcCompat="@drawable/message" />
 
                     </LinearLayout>
 
                 </RelativeLayout>
 
                 <TextView
+                    android:id="@+id/border_line"
                     android:layout_width="match_parent"
                     android:layout_height="2dp"
-                    android:id="@+id/border_line"
-                    android:background="@drawable/border_style"
-                    android:layout_weight="0.06" />
+                    android:layout_weight="0.06"
+                    android:background="@drawable/border_style" />
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -151,121 +152,121 @@
                     android:paddingBottom="5dp">
 
                     <ImageView
+                        android:id="@+id/avt1"
                         android:layout_width="65dp"
                         android:layout_height="65dp"
-                        app:srcCompat="@drawable/avt1"
-                        android:id="@+id/avt1"
+                        android:layout_marginLeft="10dp"
                         android:layout_marginTop="10dp"
-                        android:layout_marginLeft="10dp"/>
+                        app:srcCompat="@drawable/avt1" />
 
                     <TextView
-                        android:text="Tùng Lâm"
-                        android:textStyle="bold"
-                        android:textColor="@color/black"
+                        android:id="@+id/textView1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignTop="@+id/avt1"
-                        android:layout_toRightOf="@+id/avt1"
-                        android:layout_toEndOf="@+id/avt1"
                         android:layout_marginLeft="15dp"
                         android:layout_marginStart="15dp"
-                        android:id="@+id/textView1" />
+                        android:layout_toEndOf="@+id/avt1"
+                        android:layout_toRightOf="@+id/avt1"
+                        android:text="Tùng Lâm"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
 
                     <TextView
+                        android:id="@+id/textView2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/textView2"
-                        android:text=" @ngstnglm - 1d"
-                        android:textSize="12dp"
-                        android:layout_marginLeft="5dp"
-                        android:layout_marginStart="5dp"
                         android:layout_alignBaseline="@+id/textView1"
                         android:layout_alignBottom="@+id/textView1"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_toEndOf="@+id/textView1"
                         android:layout_toRightOf="@+id/textView1"
-                        android:layout_toEndOf="@+id/textView1" />
+                        android:text=" @ngstnglm - 1d"
+                        android:textSize="12dp" />
 
                     <TextView
-                        android:text="reply to Khanh"
-                        android:textColor="@color/black"
+                        android:id="@+id/textView3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/textView3"
                         android:layout_alignBaseline="@+id/textView4"
                         android:layout_alignBottom="@+id/textView4"
-                        android:layout_toRightOf="@+id/textView4"
-                        android:layout_toEndOf="@+id/textView4"
                         android:layout_marginLeft="10dp"
-                        android:layout_marginStart="10dp" />
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/textView4"
+                        android:layout_toRightOf="@+id/textView4"
+                        android:text="reply to Khanh"
+                        android:textColor="@color/black" />
 
                     <TextView
-                        android:text=" @khanhtrannnn"
-                        android:textColor="@color/blue"
+                        android:id="@+id/textView4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/textView4"
-                        android:layout_below="@+id/textView1"
                         android:layout_alignLeft="@+id/textView1"
                         android:layout_alignStart="@+id/textView1"
+                        android:layout_below="@+id/textView1"
+                        android:layout_marginLeft="-5dp"
                         android:layout_marginTop="8dp"
-                        android:layout_marginLeft="-5dp"/>
+                        android:text=" @khanhtrannnn"
+                        android:textColor="@color/blue" />
 
                     <ImageView
+                        android:id="@+id/arrow_down1"
                         android:layout_width="20dp"
                         android:layout_height="20dp"
-                        app:srcCompat="@drawable/arrow_down"
-                        android:id="@+id/arrow_down1"
-                        android:layout_alignTop="@+id/textView1"
+                        android:layout_alignParentEnd="true"
                         android:layout_alignParentRight="true"
-                        android:layout_alignParentEnd="true" />
+                        android:layout_alignTop="@+id/textView1"
+                        app:srcCompat="@drawable/arrow_down" />
 
                     <LinearLayout
-                        android:orientation="horizontal"
                         android:layout_width="match_parent"
                         android:layout_height="15dp"
-                        android:layout_below="@+id/avt1"
                         android:layout_alignLeft="@+id/avt1"
                         android:layout_alignStart="@+id/avt1"
+                        android:layout_below="@+id/avt1"
                         android:layout_marginLeft="44dp"
-                        android:layout_marginStart="44dp">
+                        android:layout_marginStart="44dp"
+                        android:orientation="horizontal">
 
                         <ImageView
+                            android:id="@+id/reply"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            app:srcCompat="@drawable/reply"
-                            android:id="@+id/reply" />
+                            app:srcCompat="@drawable/reply" />
 
                         <ImageView
+                            android:id="@+id/retweet"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            app:srcCompat="@drawable/retweet"
-                            android:id="@+id/retweet"/>
+                            app:srcCompat="@drawable/retweet" />
 
                         <ImageView
+                            android:id="@+id/heart"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            app:srcCompat="@drawable/heart"
-                            android:id="@+id/heart" />
+                            app:srcCompat="@drawable/heart" />
 
                         <ImageView
+                            android:id="@+id/message"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            app:srcCompat="@drawable/message"
-                            android:id="@+id/message" />
+                            app:srcCompat="@drawable/message" />
 
                     </LinearLayout>
 
                 </RelativeLayout>
 
                 <TextView
+                    android:id="@+id/border_line"
                     android:layout_width="match_parent"
                     android:layout_height="2dp"
-                    android:id="@+id/border_line"
-                    android:background="@drawable/border_style"
-                    android:layout_weight="0.06" />
+                    android:layout_weight="0.06"
+                    android:background="@drawable/border_style" />
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -274,121 +275,121 @@
                     android:paddingBottom="5dp">
 
                     <ImageView
+                        android:id="@+id/avt1"
                         android:layout_width="65dp"
                         android:layout_height="65dp"
-                        app:srcCompat="@drawable/avt1"
-                        android:id="@+id/avt1"
+                        android:layout_marginLeft="10dp"
                         android:layout_marginTop="10dp"
-                        android:layout_marginLeft="10dp"/>
+                        app:srcCompat="@drawable/avt1" />
 
                     <TextView
-                        android:text="Tùng Lâm"
-                        android:textStyle="bold"
-                        android:textColor="@color/black"
+                        android:id="@+id/textView1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignTop="@+id/avt1"
-                        android:layout_toRightOf="@+id/avt1"
-                        android:layout_toEndOf="@+id/avt1"
                         android:layout_marginLeft="15dp"
                         android:layout_marginStart="15dp"
-                        android:id="@+id/textView1" />
+                        android:layout_toEndOf="@+id/avt1"
+                        android:layout_toRightOf="@+id/avt1"
+                        android:text="Tùng Lâm"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
 
                     <TextView
+                        android:id="@+id/textView2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/textView2"
-                        android:text=" @ngstnglm - 1d"
-                        android:textSize="12dp"
-                        android:layout_marginLeft="5dp"
-                        android:layout_marginStart="5dp"
                         android:layout_alignBaseline="@+id/textView1"
                         android:layout_alignBottom="@+id/textView1"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_toEndOf="@+id/textView1"
                         android:layout_toRightOf="@+id/textView1"
-                        android:layout_toEndOf="@+id/textView1" />
+                        android:text=" @ngstnglm - 1d"
+                        android:textSize="12dp" />
 
                     <TextView
-                        android:text="reply to Khanh"
-                        android:textColor="@color/black"
+                        android:id="@+id/textView3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/textView3"
                         android:layout_alignBaseline="@+id/textView4"
                         android:layout_alignBottom="@+id/textView4"
-                        android:layout_toRightOf="@+id/textView4"
-                        android:layout_toEndOf="@+id/textView4"
                         android:layout_marginLeft="10dp"
-                        android:layout_marginStart="10dp" />
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/textView4"
+                        android:layout_toRightOf="@+id/textView4"
+                        android:text="reply to Khanh"
+                        android:textColor="@color/black" />
 
                     <TextView
-                        android:text=" @khanhtrannnn"
-                        android:textColor="@color/blue"
+                        android:id="@+id/textView4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/textView4"
-                        android:layout_below="@+id/textView1"
                         android:layout_alignLeft="@+id/textView1"
                         android:layout_alignStart="@+id/textView1"
+                        android:layout_below="@+id/textView1"
+                        android:layout_marginLeft="-5dp"
                         android:layout_marginTop="8dp"
-                        android:layout_marginLeft="-5dp"/>
+                        android:text=" @khanhtrannnn"
+                        android:textColor="@color/blue" />
 
                     <ImageView
+                        android:id="@+id/arrow_down1"
                         android:layout_width="20dp"
                         android:layout_height="20dp"
-                        app:srcCompat="@drawable/arrow_down"
-                        android:id="@+id/arrow_down1"
-                        android:layout_alignTop="@+id/textView1"
+                        android:layout_alignParentEnd="true"
                         android:layout_alignParentRight="true"
-                        android:layout_alignParentEnd="true" />
+                        android:layout_alignTop="@+id/textView1"
+                        app:srcCompat="@drawable/arrow_down" />
 
                     <LinearLayout
-                        android:orientation="horizontal"
                         android:layout_width="match_parent"
                         android:layout_height="15dp"
-                        android:layout_below="@+id/avt1"
                         android:layout_alignLeft="@+id/avt1"
                         android:layout_alignStart="@+id/avt1"
+                        android:layout_below="@+id/avt1"
                         android:layout_marginLeft="44dp"
-                        android:layout_marginStart="44dp">
+                        android:layout_marginStart="44dp"
+                        android:orientation="horizontal">
 
                         <ImageView
+                            android:id="@+id/reply"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            app:srcCompat="@drawable/reply"
-                            android:id="@+id/reply" />
+                            app:srcCompat="@drawable/reply" />
 
                         <ImageView
+                            android:id="@+id/retweet"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            app:srcCompat="@drawable/retweet"
-                            android:id="@+id/retweet"/>
+                            app:srcCompat="@drawable/retweet" />
 
                         <ImageView
+                            android:id="@+id/heart"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            app:srcCompat="@drawable/heart"
-                            android:id="@+id/heart" />
+                            app:srcCompat="@drawable/heart" />
 
                         <ImageView
+                            android:id="@+id/message"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            app:srcCompat="@drawable/message"
-                            android:id="@+id/message" />
+                            app:srcCompat="@drawable/message" />
 
                     </LinearLayout>
 
                 </RelativeLayout>
 
                 <TextView
+                    android:id="@+id/border_line"
                     android:layout_width="match_parent"
                     android:layout_height="2dp"
-                    android:id="@+id/border_line"
-                    android:background="@drawable/border_style"
-                    android:layout_weight="0.06" />
+                    android:layout_weight="0.06"
+                    android:background="@drawable/border_style" />
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -397,110 +398,110 @@
                     android:paddingBottom="5dp">
 
                     <ImageView
+                        android:id="@+id/avt1"
                         android:layout_width="65dp"
                         android:layout_height="65dp"
-                        app:srcCompat="@drawable/avt2"
-                        android:id="@+id/avt1"
+                        android:layout_marginLeft="10dp"
                         android:layout_marginTop="10dp"
-                        android:layout_marginLeft="10dp"/>
+                        app:srcCompat="@drawable/avt2" />
 
                     <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/avt1"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_toEndOf="@+id/avt1"
+                        android:layout_toRightOf="@+id/avt1"
                         android:text="Luke Sean"
-                        android:textStyle="bold"
                         android:textColor="@color/black"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignTop="@+id/avt1"
-                        android:layout_toRightOf="@+id/avt1"
-                        android:layout_toEndOf="@+id/avt1"
-                        android:layout_marginLeft="15dp"
-                        android:layout_marginStart="15dp"
-                        android:id="@+id/textView1" />
+                        android:textStyle="bold" />
 
                     <TextView
+                        android:id="@+id/textView2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/textView2"
-                        android:text=" @LukeDaDD - 2d"
-                        android:textSize="12dp"
-                        android:layout_marginLeft="5dp"
-                        android:layout_marginStart="5dp"
                         android:layout_alignBaseline="@+id/textView1"
                         android:layout_alignBottom="@+id/textView1"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_toEndOf="@+id/textView1"
                         android:layout_toRightOf="@+id/textView1"
-                        android:layout_toEndOf="@+id/textView1" />
+                        android:text=" @LukeDaDD - 2d"
+                        android:textSize="12dp" />
 
                     <TextView
-                        android:text="Hello"
-                        android:textColor="@color/black"
+                        android:id="@+id/textView3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/textView3"
                         android:layout_alignBaseline="@+id/textView4"
                         android:layout_alignBottom="@+id/textView4"
-                        android:layout_toRightOf="@+id/textView4"
-                        android:layout_toEndOf="@+id/textView4"
                         android:layout_marginLeft="10dp"
-                        android:layout_marginStart="10dp" />
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/textView4"
+                        android:layout_toRightOf="@+id/textView4"
+                        android:text="Hello"
+                        android:textColor="@color/black" />
 
                     <TextView
-                        android:text=" @khanhtrannnn"
-                        android:textColor="@color/blue"
+                        android:id="@+id/textView4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/textView4"
-                        android:layout_below="@+id/textView1"
                         android:layout_alignLeft="@+id/textView1"
                         android:layout_alignStart="@+id/textView1"
+                        android:layout_below="@+id/textView1"
+                        android:layout_marginLeft="-5dp"
                         android:layout_marginTop="8dp"
-                        android:layout_marginLeft="-5dp"/>
+                        android:text=" @khanhtrannnn"
+                        android:textColor="@color/blue" />
 
                     <ImageView
+                        android:id="@+id/arrow_down1"
                         android:layout_width="20dp"
                         android:layout_height="20dp"
-                        app:srcCompat="@drawable/arrow_down"
-                        android:id="@+id/arrow_down1"
-                        android:layout_alignTop="@+id/textView1"
+                        android:layout_alignParentEnd="true"
                         android:layout_alignParentRight="true"
-                        android:layout_alignParentEnd="true" />
+                        android:layout_alignTop="@+id/textView1"
+                        app:srcCompat="@drawable/arrow_down" />
 
                     <LinearLayout
-                        android:orientation="horizontal"
                         android:layout_width="match_parent"
                         android:layout_height="15dp"
-                        android:layout_below="@+id/avt1"
                         android:layout_alignLeft="@+id/avt1"
                         android:layout_alignStart="@+id/avt1"
+                        android:layout_below="@+id/avt1"
                         android:layout_marginLeft="44dp"
-                        android:layout_marginStart="44dp">
+                        android:layout_marginStart="44dp"
+                        android:orientation="horizontal">
 
                         <ImageView
+                            android:id="@+id/reply"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            app:srcCompat="@drawable/reply"
-                            android:id="@+id/reply" />
+                            app:srcCompat="@drawable/reply" />
 
                         <ImageView
+                            android:id="@+id/retweet"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            app:srcCompat="@drawable/retweet"
-                            android:id="@+id/retweet"/>
+                            app:srcCompat="@drawable/retweet" />
 
                         <ImageView
+                            android:id="@+id/heart"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            app:srcCompat="@drawable/heart"
-                            android:id="@+id/heart" />
+                            app:srcCompat="@drawable/heart" />
 
                         <ImageView
+                            android:id="@+id/message"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            app:srcCompat="@drawable/message"
-                            android:id="@+id/message" />
+                            app:srcCompat="@drawable/message" />
 
                     </LinearLayout>
 
@@ -508,11 +509,11 @@
                 </RelativeLayout>
 
                 <TextView
+                    android:id="@+id/border_line"
                     android:layout_width="match_parent"
                     android:layout_height="2dp"
-                    android:id="@+id/border_line"
-                    android:background="@drawable/border_style"
-                    android:layout_weight="0.06" />
+                    android:layout_weight="0.06"
+                    android:background="@drawable/border_style" />
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -521,121 +522,121 @@
                     android:paddingBottom="5dp">
 
                     <ImageView
+                        android:id="@+id/avt1"
                         android:layout_width="65dp"
                         android:layout_height="65dp"
-                        app:srcCompat="@drawable/avt1"
-                        android:id="@+id/avt1"
+                        android:layout_marginLeft="10dp"
                         android:layout_marginTop="10dp"
-                        android:layout_marginLeft="10dp"/>
+                        app:srcCompat="@drawable/avt1" />
 
                     <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/avt1"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_toEndOf="@+id/avt1"
+                        android:layout_toRightOf="@+id/avt1"
                         android:text="Tùng Lâm"
-                        android:textStyle="bold"
                         android:textColor="@color/black"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignTop="@+id/avt1"
-                        android:layout_toRightOf="@+id/avt1"
-                        android:layout_toEndOf="@+id/avt1"
-                        android:layout_marginLeft="15dp"
-                        android:layout_marginStart="15dp"
-                        android:id="@+id/textView1" />
+                        android:textStyle="bold" />
 
                     <TextView
+                        android:id="@+id/textView2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/textView2"
-                        android:text=" @ngstnglm - 1d"
-                        android:textSize="12dp"
-                        android:layout_marginLeft="5dp"
-                        android:layout_marginStart="5dp"
                         android:layout_alignBaseline="@+id/textView1"
                         android:layout_alignBottom="@+id/textView1"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_toEndOf="@+id/textView1"
                         android:layout_toRightOf="@+id/textView1"
-                        android:layout_toEndOf="@+id/textView1" />
+                        android:text=" @ngstnglm - 1d"
+                        android:textSize="12dp" />
 
                     <TextView
-                        android:text="reply to Khanh"
-                        android:textColor="@color/black"
+                        android:id="@+id/textView3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/textView3"
                         android:layout_alignBaseline="@+id/textView4"
                         android:layout_alignBottom="@+id/textView4"
-                        android:layout_toRightOf="@+id/textView4"
-                        android:layout_toEndOf="@+id/textView4"
                         android:layout_marginLeft="10dp"
-                        android:layout_marginStart="10dp" />
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/textView4"
+                        android:layout_toRightOf="@+id/textView4"
+                        android:text="reply to Khanh"
+                        android:textColor="@color/black" />
 
                     <TextView
-                        android:text=" @khanhtrannnn"
-                        android:textColor="@color/blue"
+                        android:id="@+id/textView4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/textView4"
-                        android:layout_below="@+id/textView1"
                         android:layout_alignLeft="@+id/textView1"
                         android:layout_alignStart="@+id/textView1"
+                        android:layout_below="@+id/textView1"
+                        android:layout_marginLeft="-5dp"
                         android:layout_marginTop="8dp"
-                        android:layout_marginLeft="-5dp"/>
+                        android:text=" @khanhtrannnn"
+                        android:textColor="@color/blue" />
 
                     <ImageView
+                        android:id="@+id/arrow_down1"
                         android:layout_width="20dp"
                         android:layout_height="20dp"
-                        app:srcCompat="@drawable/arrow_down"
-                        android:id="@+id/arrow_down1"
-                        android:layout_alignTop="@+id/textView1"
+                        android:layout_alignParentEnd="true"
                         android:layout_alignParentRight="true"
-                        android:layout_alignParentEnd="true" />
+                        android:layout_alignTop="@+id/textView1"
+                        app:srcCompat="@drawable/arrow_down" />
 
                     <LinearLayout
-                        android:orientation="horizontal"
                         android:layout_width="match_parent"
                         android:layout_height="15dp"
-                        android:layout_below="@+id/avt1"
                         android:layout_alignLeft="@+id/avt1"
                         android:layout_alignStart="@+id/avt1"
+                        android:layout_below="@+id/avt1"
                         android:layout_marginLeft="44dp"
-                        android:layout_marginStart="44dp">
+                        android:layout_marginStart="44dp"
+                        android:orientation="horizontal">
 
                         <ImageView
+                            android:id="@+id/reply"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            app:srcCompat="@drawable/reply"
-                            android:id="@+id/reply" />
+                            app:srcCompat="@drawable/reply" />
 
                         <ImageView
+                            android:id="@+id/retweet"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            app:srcCompat="@drawable/retweet"
-                            android:id="@+id/retweet"/>
+                            app:srcCompat="@drawable/retweet" />
 
                         <ImageView
+                            android:id="@+id/heart"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            app:srcCompat="@drawable/heart"
-                            android:id="@+id/heart" />
+                            app:srcCompat="@drawable/heart" />
 
                         <ImageView
+                            android:id="@+id/message"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            app:srcCompat="@drawable/message"
-                            android:id="@+id/message" />
+                            app:srcCompat="@drawable/message" />
 
                     </LinearLayout>
 
                 </RelativeLayout>
 
                 <TextView
+                    android:id="@+id/border_line"
                     android:layout_width="match_parent"
                     android:layout_height="2dp"
-                    android:id="@+id/border_line"
-                    android:background="@drawable/border_style"
-                    android:layout_weight="0.06" />
+                    android:layout_weight="0.06"
+                    android:background="@drawable/border_style" />
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -644,110 +645,110 @@
                     android:paddingBottom="5dp">
 
                     <ImageView
+                        android:id="@+id/avt1"
                         android:layout_width="65dp"
                         android:layout_height="65dp"
-                        app:srcCompat="@drawable/avt2"
-                        android:id="@+id/avt1"
+                        android:layout_marginLeft="10dp"
                         android:layout_marginTop="10dp"
-                        android:layout_marginLeft="10dp"/>
+                        app:srcCompat="@drawable/avt2" />
 
                     <TextView
-                        android:text="Luke Sean"
-                        android:textStyle="bold"
-                        android:textColor="@color/black"
+                        android:id="@+id/textView1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignTop="@+id/avt1"
-                        android:layout_toRightOf="@+id/avt1"
-                        android:layout_toEndOf="@+id/avt1"
                         android:layout_marginLeft="15dp"
                         android:layout_marginStart="15dp"
-                        android:id="@+id/textView1" />
+                        android:layout_toEndOf="@+id/avt1"
+                        android:layout_toRightOf="@+id/avt1"
+                        android:text="Luke Sean"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
 
                     <TextView
+                        android:id="@+id/textView2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/textView2"
-                        android:text=" @LukeDaDD - 2d"
-                        android:textSize="12dp"
-                        android:layout_marginLeft="5dp"
-                        android:layout_marginStart="5dp"
                         android:layout_alignBaseline="@+id/textView1"
                         android:layout_alignBottom="@+id/textView1"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_toEndOf="@+id/textView1"
                         android:layout_toRightOf="@+id/textView1"
-                        android:layout_toEndOf="@+id/textView1" />
+                        android:text=" @LukeDaDD - 2d"
+                        android:textSize="12dp" />
 
                     <TextView
-                        android:text="Hello"
-                        android:textColor="@color/black"
+                        android:id="@+id/textView3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/textView3"
                         android:layout_alignBaseline="@+id/textView4"
                         android:layout_alignBottom="@+id/textView4"
-                        android:layout_toRightOf="@+id/textView4"
-                        android:layout_toEndOf="@+id/textView4"
                         android:layout_marginLeft="10dp"
-                        android:layout_marginStart="10dp" />
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/textView4"
+                        android:layout_toRightOf="@+id/textView4"
+                        android:text="Hello"
+                        android:textColor="@color/black" />
 
                     <TextView
-                        android:text=" @khanhtrannnn"
-                        android:textColor="@color/blue"
+                        android:id="@+id/textView4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/textView4"
-                        android:layout_below="@+id/textView1"
                         android:layout_alignLeft="@+id/textView1"
                         android:layout_alignStart="@+id/textView1"
+                        android:layout_below="@+id/textView1"
+                        android:layout_marginLeft="-5dp"
                         android:layout_marginTop="8dp"
-                        android:layout_marginLeft="-5dp"/>
+                        android:text=" @khanhtrannnn"
+                        android:textColor="@color/blue" />
 
                     <ImageView
+                        android:id="@+id/arrow_down1"
                         android:layout_width="20dp"
                         android:layout_height="20dp"
-                        app:srcCompat="@drawable/arrow_down"
-                        android:id="@+id/arrow_down1"
-                        android:layout_alignTop="@+id/textView1"
+                        android:layout_alignParentEnd="true"
                         android:layout_alignParentRight="true"
-                        android:layout_alignParentEnd="true" />
+                        android:layout_alignTop="@+id/textView1"
+                        app:srcCompat="@drawable/arrow_down" />
 
                     <LinearLayout
-                        android:orientation="horizontal"
                         android:layout_width="match_parent"
                         android:layout_height="15dp"
-                        android:layout_below="@+id/avt1"
                         android:layout_alignLeft="@+id/avt1"
                         android:layout_alignStart="@+id/avt1"
+                        android:layout_below="@+id/avt1"
                         android:layout_marginLeft="44dp"
-                        android:layout_marginStart="44dp">
+                        android:layout_marginStart="44dp"
+                        android:orientation="horizontal">
 
                         <ImageView
+                            android:id="@+id/reply"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            app:srcCompat="@drawable/reply"
-                            android:id="@+id/reply" />
+                            app:srcCompat="@drawable/reply" />
 
                         <ImageView
+                            android:id="@+id/retweet"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            app:srcCompat="@drawable/retweet"
-                            android:id="@+id/retweet"/>
+                            app:srcCompat="@drawable/retweet" />
 
                         <ImageView
+                            android:id="@+id/heart"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            app:srcCompat="@drawable/heart"
-                            android:id="@+id/heart" />
+                            app:srcCompat="@drawable/heart" />
 
                         <ImageView
+                            android:id="@+id/message"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            app:srcCompat="@drawable/message"
-                            android:id="@+id/message" />
+                            app:srcCompat="@drawable/message" />
 
                     </LinearLayout>
 
@@ -755,11 +756,11 @@
                 </RelativeLayout>
 
                 <TextView
+                    android:id="@+id/border_line"
                     android:layout_width="match_parent"
                     android:layout_height="2dp"
-                    android:id="@+id/border_line"
-                    android:background="@drawable/border_style"
-                    android:layout_weight="0.06" />
+                    android:layout_weight="0.06"
+                    android:background="@drawable/border_style" />
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -768,60 +769,60 @@
                     android:paddingBottom="5dp">
 
                     <ImageView
+                        android:id="@+id/imageView2"
                         android:layout_width="33dp"
                         android:layout_height="33dp"
-                        app:srcCompat="@drawable/avt2"
-                        android:id="@+id/imageView2"
                         android:layout_alignParentTop="true"
-                        android:layout_toRightOf="@+id/imageView"
-                        android:layout_toEndOf="@+id/imageView"
                         android:layout_marginLeft="14dp"
                         android:layout_marginStart="14dp"
-                        android:layout_marginTop="11dp" />
+                        android:layout_marginTop="11dp"
+                        android:layout_toEndOf="@+id/imageView"
+                        android:layout_toRightOf="@+id/imageView"
+                        app:srcCompat="@drawable/avt2" />
 
                     <ImageView
+                        android:id="@+id/imageView"
                         android:layout_width="15dp"
                         android:layout_height="15dp"
-                        app:srcCompat="@drawable/user"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignTop="@+id/imageView2"
                         android:layout_marginLeft="60dp"
                         android:layout_marginStart="60dp"
-                        android:id="@+id/imageView"
-                        android:layout_alignTop="@+id/imageView2"
-                        android:layout_alignParentLeft="true"
-                        android:layout_alignParentStart="true" />
+                        app:srcCompat="@drawable/user" />
 
                     <TextView
-                        android:text="Luke Sean"
-                        android:textStyle="bold"
-                        android:textColor="@color/black"
+                        android:id="@+id/textView5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_below="@+id/imageView2"
                         android:layout_alignLeft="@+id/imageView2"
                         android:layout_alignStart="@+id/imageView2"
+                        android:layout_below="@+id/imageView2"
                         android:layout_marginTop="12dp"
-                        android:id="@+id/textView5" />
+                        android:text="Luke Sean"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
 
                     <TextView
-                        android:text="followed you"
-                        android:textColor="@color/black"
+                        android:id="@+id/textView6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/textView6"
                         android:layout_alignBaseline="@+id/textView5"
                         android:layout_alignBottom="@+id/textView5"
-                        android:layout_toRightOf="@+id/textView5"
-                        android:layout_toEndOf="@+id/textView5"
                         android:layout_marginLeft="5dp"
-                        android:layout_marginStart="5dp" />
+                        android:layout_marginStart="5dp"
+                        android:layout_toEndOf="@+id/textView5"
+                        android:layout_toRightOf="@+id/textView5"
+                        android:text="followed you"
+                        android:textColor="@color/black" />
                 </RelativeLayout>
 
                 <TextView
+                    android:id="@+id/border_line"
                     android:layout_width="match_parent"
                     android:layout_height="2dp"
-                    android:id="@+id/border_line"
-                    android:background="@drawable/border_style"
-                    android:layout_weight="0.06" />
+                    android:layout_weight="0.06"
+                    android:background="@drawable/border_style" />
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -830,52 +831,52 @@
                     android:paddingBottom="5dp">
 
                     <ImageView
+                        android:id="@+id/imageView2"
                         android:layout_width="33dp"
                         android:layout_height="33dp"
-                        app:srcCompat="@drawable/avt1"
-                        android:id="@+id/imageView2"
                         android:layout_alignParentTop="true"
-                        android:layout_toRightOf="@+id/imageView"
-                        android:layout_toEndOf="@+id/imageView"
                         android:layout_marginLeft="14dp"
                         android:layout_marginStart="14dp"
-                        android:layout_marginTop="11dp" />
+                        android:layout_marginTop="11dp"
+                        android:layout_toEndOf="@+id/imageView"
+                        android:layout_toRightOf="@+id/imageView"
+                        app:srcCompat="@drawable/avt1" />
 
                     <ImageView
+                        android:id="@+id/imageView"
                         android:layout_width="15dp"
                         android:layout_height="15dp"
-                        app:srcCompat="@drawable/user"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignTop="@+id/imageView2"
                         android:layout_marginLeft="60dp"
                         android:layout_marginStart="60dp"
-                        android:id="@+id/imageView"
-                        android:layout_alignTop="@+id/imageView2"
-                        android:layout_alignParentLeft="true"
-                        android:layout_alignParentStart="true" />
+                        app:srcCompat="@drawable/user" />
 
                     <TextView
-                        android:text="Tùng Lâm"
-                        android:textStyle="bold"
-                        android:textColor="@color/black"
+                        android:id="@+id/textView5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_below="@+id/imageView2"
                         android:layout_alignLeft="@+id/imageView2"
                         android:layout_alignStart="@+id/imageView2"
+                        android:layout_below="@+id/imageView2"
                         android:layout_marginTop="12dp"
-                        android:id="@+id/textView5" />
+                        android:text="Tùng Lâm"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
 
                     <TextView
-                        android:text="followed you"
-                        android:textColor="@color/black"
+                        android:id="@+id/textView6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/textView6"
                         android:layout_alignBaseline="@+id/textView5"
                         android:layout_alignBottom="@+id/textView5"
-                        android:layout_toRightOf="@+id/textView5"
-                        android:layout_toEndOf="@+id/textView5"
                         android:layout_marginLeft="5dp"
-                        android:layout_marginStart="5dp" />
+                        android:layout_marginStart="5dp"
+                        android:layout_toEndOf="@+id/textView5"
+                        android:layout_toRightOf="@+id/textView5"
+                        android:text="followed you"
+                        android:textColor="@color/black" />
                 </RelativeLayout>
             </LinearLayout>
         </ScrollView>
@@ -883,20 +884,20 @@
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="0.54"
-            android:layout_marginTop="400dp">
+            android:layout_marginTop="400dp"
+            android:layout_weight="0.54">
 
             <ImageView
+                android:id="@+id/tweet"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                app:srcCompat="@drawable/tweet"
-                android:id="@+id/tweet"
-                android:layout_weight="0.28"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentRight="true"
                 android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="12dp"
                 android:layout_marginRight="12dp"
-                android:layout_marginEnd="12dp" />
+                android:layout_weight="0.28"
+                app:srcCompat="@drawable/tweet" />
 
         </RelativeLayout>
     </FrameLayout>

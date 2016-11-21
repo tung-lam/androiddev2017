@@ -1,1208 +1,1252 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context="vn.edu.usth.twitter.Fragment.Home">
 
-    <ScrollView
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-        
-        <LinearLayout
+
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_height="match_parent">
 
-            <RelativeLayout
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="0.06">
+                android:orientation="vertical">
 
-                <ImageView
-                    android:layout_width="65dp"
-                    android:layout_height="65dp"
-                    app:srcCompat="@drawable/avt1"
-                    android:id="@+id/avt1"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginLeft="10dp"/>
-
-                <TextView
-                    android:text="Tùng Lâm"
-                    android:textStyle="bold"
-                    android:textColor="@color/black"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignTop="@+id/avt1"
-                    android:layout_toRightOf="@+id/avt1"
-                    android:layout_toEndOf="@+id/avt1"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginStart="15dp"
-                    android:id="@+id/textView1" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/textView2"
-                    android:text=" @ngstnglm - 1d"
-                    android:textSize="12dp"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_alignBaseline="@+id/textView1"
-                    android:layout_alignBottom="@+id/textView1"
-                    android:layout_toRightOf="@+id/textView1"
-                    android:layout_toEndOf="@+id/textView1" />
-
-                <TextView
-                    android:text="reply to Khanh"
-                    android:textColor="@color/black"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/textView3"
-                    android:layout_alignBaseline="@+id/textView4"
-                    android:layout_alignBottom="@+id/textView4"
-                    android:layout_toRightOf="@+id/textView4"
-                    android:layout_toEndOf="@+id/textView4"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginStart="10dp" />
-
-                <TextView
-                    android:text=" @khanhtrannnn"
-                    android:textColor="@color/blue"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/textView4"
-                    android:layout_below="@+id/textView1"
-                    android:layout_alignLeft="@+id/textView1"
-                    android:layout_alignStart="@+id/textView1"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginLeft="-5dp"/>
-
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    app:srcCompat="@drawable/arrow_down"
-                    android:id="@+id/arrow_down1"
-                    android:layout_alignTop="@+id/textView1"
-                    android:layout_alignParentRight="true"
-                    android:layout_alignParentEnd="true" />
-
-                <LinearLayout
-                    android:orientation="horizontal"
+                <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="20dp"
-                    android:layout_below="@+id/avt1"
-                    android:layout_toRightOf="@+id/avt1"
-                    android:layout_toEndOf="@+id/avt1">
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.06"
+                    android:paddingBottom="5dp">
 
                     <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        app:srcCompat="@drawable/reply"
-                        android:id="@+id/reply" />
+                        android:id="@+id/avt1"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        app:srcCompat="@drawable/avt1" />
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/avt1"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_toEndOf="@+id/avt1"
+                        android:layout_toRightOf="@+id/avt1"
+                        android:text="Tùng Lâm"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/textView1"
+                        android:layout_alignBottom="@+id/textView1"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_toEndOf="@+id/textView1"
+                        android:layout_toRightOf="@+id/textView1"
+                        android:text=" @ngstnglm - 1d"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/textView4"
+                        android:layout_alignBottom="@+id/textView4"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/textView4"
+                        android:layout_toRightOf="@+id/textView4"
+                        android:text="reply to Khanh"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/textView1"
+                        android:layout_alignStart="@+id/textView1"
+                        android:layout_below="@+id/textView1"
+                        android:layout_marginLeft="-5dp"
+                        android:layout_marginTop="8dp"
+                        android:text=" @khanhtrannnn"
+                        android:textColor="@color/blue" />
 
                     <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        app:srcCompat="@drawable/retweet"
-                        android:id="@+id/retweet"/>
+                        android:id="@+id/arrow_down1"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@+id/textView1"
+                        app:srcCompat="@drawable/arrow_down" />
 
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        app:srcCompat="@drawable/heart"
-                        android:id="@+id/heart" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_below="@+id/avt1"
+                        android:layout_toEndOf="@+id/avt1"
+                        android:layout_toRightOf="@+id/avt1"
+                        android:orientation="horizontal">
 
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        app:srcCompat="@drawable/message"
-                        android:id="@+id/message" />
+                        <ImageView
+                            android:id="@+id/reply"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/reply" />
 
-                </LinearLayout>
+                        <ImageView
+                            android:id="@+id/retweet"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/retweet" />
 
-            </RelativeLayout>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="2dp"
-                android:id="@+id/border_line"
-                android:background="@drawable/border_style"
-                android:layout_weight="0.06" />
+                        <ImageView
+                            android:id="@+id/heart"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/heart" />
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="0.06">
+                        <ImageView
+                            android:id="@+id/message"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/message" />
 
-                <ImageView
-                    android:layout_width="65dp"
-                    android:layout_height="65dp"
-                    app:srcCompat="@drawable/avt2"
-                    android:id="@+id/avt1"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginLeft="10dp"/>
+                    </LinearLayout>
 
-                <TextView
-                    android:text="Luke Sean"
-                    android:textStyle="bold"
-                    android:textColor="@color/black"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignTop="@+id/avt1"
-                    android:layout_toRightOf="@+id/avt1"
-                    android:layout_toEndOf="@+id/avt1"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginStart="15dp"
-                    android:id="@+id/textView1" />
+                </RelativeLayout>
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/textView2"
-                    android:text=" @LukeDaDD - 2d"
-                    android:textSize="12dp"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_alignBaseline="@+id/textView1"
-                    android:layout_alignBottom="@+id/textView1"
-                    android:layout_toRightOf="@+id/textView1"
-                    android:layout_toEndOf="@+id/textView1" />
-
-                <TextView
-                    android:text="Hello"
-                    android:textColor="@color/black"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/textView3"
-                    android:layout_alignBaseline="@+id/textView4"
-                    android:layout_alignBottom="@+id/textView4"
-                    android:layout_toRightOf="@+id/textView4"
-                    android:layout_toEndOf="@+id/textView4"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginStart="10dp" />
-
-                <TextView
-                    android:text=" @khanhtrannnn"
-                    android:textColor="@color/blue"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/textView4"
-                    android:layout_below="@+id/textView1"
-                    android:layout_alignLeft="@+id/textView1"
-                    android:layout_alignStart="@+id/textView1"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginLeft="-5dp"/>
-
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    app:srcCompat="@drawable/arrow_down"
-                    android:id="@+id/arrow_down1"
-                    android:layout_alignTop="@+id/textView1"
-                    android:layout_alignParentRight="true"
-                    android:layout_alignParentEnd="true" />
-
-                <LinearLayout
-                    android:orientation="horizontal"
+                    android:id="@+id/border_line"
                     android:layout_width="match_parent"
-                    android:layout_height="20dp"
-                    android:layout_below="@+id/avt1"
-                    android:layout_toRightOf="@+id/avt1"
-                    android:layout_toEndOf="@+id/avt1">
+                    android:layout_height="2dp"
+                    android:layout_weight="0.06"
+                    android:background="@drawable/border_style" />
 
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        app:srcCompat="@drawable/reply"
-                        android:id="@+id/reply" />
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        app:srcCompat="@drawable/retweet"
-                        android:id="@+id/retweet"/>
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        app:srcCompat="@drawable/heart"
-                        android:id="@+id/heart" />
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        app:srcCompat="@drawable/message"
-                        android:id="@+id/message" />
-
-                </LinearLayout>
-
-
-            </RelativeLayout>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="2dp"
-                android:id="@+id/border_line"
-                android:background="@drawable/border_style"
-                android:layout_weight="0.06" />
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="0.06">
-
-                <ImageView
-                    android:layout_width="65dp"
-                    android:layout_height="65dp"
-                    app:srcCompat="@drawable/avt2"
-                    android:id="@+id/avt1"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginLeft="10dp"/>
-
-                <TextView
-                    android:text="Luke Sean"
-                    android:textStyle="bold"
-                    android:textColor="@color/black"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignTop="@+id/avt1"
-                    android:layout_toRightOf="@+id/avt1"
-                    android:layout_toEndOf="@+id/avt1"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginStart="15dp"
-                    android:id="@+id/textView1" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/textView2"
-                    android:text=" @LukeDaDD - 2d"
-                    android:textSize="12dp"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_alignBaseline="@+id/textView1"
-                    android:layout_alignBottom="@+id/textView1"
-                    android:layout_toRightOf="@+id/textView1"
-                    android:layout_toEndOf="@+id/textView1" />
-
-                <TextView
-                    android:text="Hello"
-                    android:textColor="@color/black"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/textView3"
-                    android:layout_alignBaseline="@+id/textView4"
-                    android:layout_alignBottom="@+id/textView4"
-                    android:layout_toRightOf="@+id/textView4"
-                    android:layout_toEndOf="@+id/textView4"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginStart="10dp" />
-
-                <TextView
-                    android:text=" @khanhtrannnn"
-                    android:textColor="@color/blue"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/textView4"
-                    android:layout_below="@+id/textView1"
-                    android:layout_alignLeft="@+id/textView1"
-                    android:layout_alignStart="@+id/textView1"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginLeft="-5dp"/>
-
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    app:srcCompat="@drawable/arrow_down"
-                    android:id="@+id/arrow_down1"
-                    android:layout_alignTop="@+id/textView1"
-                    android:layout_alignParentRight="true"
-                    android:layout_alignParentEnd="true" />
-
-                <LinearLayout
-                    android:orientation="horizontal"
+                <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="20dp"
-                    android:layout_below="@+id/avt1"
-                    android:layout_toRightOf="@+id/avt1"
-                    android:layout_toEndOf="@+id/avt1">
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.06"
+                    android:paddingBottom="5dp">
 
                     <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        app:srcCompat="@drawable/reply"
-                        android:id="@+id/reply" />
+                        android:id="@+id/avt1"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        app:srcCompat="@drawable/avt2" />
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/avt1"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_toEndOf="@+id/avt1"
+                        android:layout_toRightOf="@+id/avt1"
+                        android:text="Luke Sean"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/textView1"
+                        android:layout_alignBottom="@+id/textView1"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_toEndOf="@+id/textView1"
+                        android:layout_toRightOf="@+id/textView1"
+                        android:text=" @LukeDaDD - 2d"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/textView4"
+                        android:layout_alignBottom="@+id/textView4"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/textView4"
+                        android:layout_toRightOf="@+id/textView4"
+                        android:text="Hello"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/textView1"
+                        android:layout_alignStart="@+id/textView1"
+                        android:layout_below="@+id/textView1"
+                        android:layout_marginLeft="-5dp"
+                        android:layout_marginTop="8dp"
+                        android:text=" @khanhtrannnn"
+                        android:textColor="@color/blue" />
 
                     <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        app:srcCompat="@drawable/retweet"
-                        android:id="@+id/retweet"/>
+                        android:id="@+id/arrow_down1"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@+id/textView1"
+                        app:srcCompat="@drawable/arrow_down" />
 
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        app:srcCompat="@drawable/heart"
-                        android:id="@+id/heart" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_below="@+id/avt1"
+                        android:layout_toEndOf="@+id/avt1"
+                        android:layout_toRightOf="@+id/avt1"
+                        android:orientation="horizontal">
 
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        app:srcCompat="@drawable/message"
-                        android:id="@+id/message" />
+                        <ImageView
+                            android:id="@+id/reply"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/reply" />
 
-                </LinearLayout>
+                        <ImageView
+                            android:id="@+id/retweet"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/retweet" />
+
+                        <ImageView
+                            android:id="@+id/heart"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/heart" />
+
+                        <ImageView
+                            android:id="@+id/message"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/message" />
+
+                    </LinearLayout>
 
 
-            </RelativeLayout>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="2dp"
-                android:id="@+id/border_line"
-                android:background="@drawable/border_style"
-                android:layout_weight="0.06" />
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="0.06">
-
-                <ImageView
-                    android:layout_width="65dp"
-                    android:layout_height="65dp"
-                    app:srcCompat="@drawable/avt1"
-                    android:id="@+id/avt1"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginLeft="10dp"/>
-
-                <TextView
-                    android:text="Tùng Lâm"
-                    android:textStyle="bold"
-                    android:textColor="@color/black"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignTop="@+id/avt1"
-                    android:layout_toRightOf="@+id/avt1"
-                    android:layout_toEndOf="@+id/avt1"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginStart="15dp"
-                    android:id="@+id/textView1" />
+                </RelativeLayout>
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/textView2"
-                    android:text=" @ngstnglm - 1d"
-                    android:textSize="12dp"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_alignBaseline="@+id/textView1"
-                    android:layout_alignBottom="@+id/textView1"
-                    android:layout_toRightOf="@+id/textView1"
-                    android:layout_toEndOf="@+id/textView1" />
-
-                <TextView
-                    android:text="reply to Khanh"
-                    android:textColor="@color/black"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/textView3"
-                    android:layout_alignBaseline="@+id/textView4"
-                    android:layout_alignBottom="@+id/textView4"
-                    android:layout_toRightOf="@+id/textView4"
-                    android:layout_toEndOf="@+id/textView4"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginStart="10dp" />
-
-                <TextView
-                    android:text=" @khanhtrannnn"
-                    android:textColor="@color/blue"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/textView4"
-                    android:layout_below="@+id/textView1"
-                    android:layout_alignLeft="@+id/textView1"
-                    android:layout_alignStart="@+id/textView1"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginLeft="-5dp"/>
-
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    app:srcCompat="@drawable/arrow_down"
-                    android:id="@+id/arrow_down1"
-                    android:layout_alignTop="@+id/textView1"
-                    android:layout_alignParentRight="true"
-                    android:layout_alignParentEnd="true" />
-
-                <LinearLayout
-                    android:orientation="horizontal"
+                    android:id="@+id/border_line"
                     android:layout_width="match_parent"
-                    android:layout_height="20dp"
-                    android:layout_below="@+id/avt1"
-                    android:layout_toRightOf="@+id/avt1"
-                    android:layout_toEndOf="@+id/avt1">
+                    android:layout_height="2dp"
+                    android:layout_weight="0.06"
+                    android:background="@drawable/border_style" />
 
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        app:srcCompat="@drawable/reply"
-                        android:id="@+id/reply" />
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        app:srcCompat="@drawable/retweet"
-                        android:id="@+id/retweet"/>
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        app:srcCompat="@drawable/heart"
-                        android:id="@+id/heart" />
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        app:srcCompat="@drawable/message"
-                        android:id="@+id/message" />
-
-                </LinearLayout>
-
-            </RelativeLayout>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="2dp"
-                android:id="@+id/border_line"
-                android:background="@drawable/border_style"
-                android:layout_weight="0.06" />
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="0.06">
-
-                <ImageView
-                    android:layout_width="65dp"
-                    android:layout_height="65dp"
-                    app:srcCompat="@drawable/avt2"
-                    android:id="@+id/avt1"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginLeft="10dp"/>
-
-                <TextView
-                    android:text="Luke Sean"
-                    android:textStyle="bold"
-                    android:textColor="@color/black"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignTop="@+id/avt1"
-                    android:layout_toRightOf="@+id/avt1"
-                    android:layout_toEndOf="@+id/avt1"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginStart="15dp"
-                    android:id="@+id/textView1" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/textView2"
-                    android:text=" @LukeDaDD - 2d"
-                    android:textSize="12dp"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_alignBaseline="@+id/textView1"
-                    android:layout_alignBottom="@+id/textView1"
-                    android:layout_toRightOf="@+id/textView1"
-                    android:layout_toEndOf="@+id/textView1" />
-
-                <TextView
-                    android:text="Hello"
-                    android:textColor="@color/black"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/textView3"
-                    android:layout_alignBaseline="@+id/textView4"
-                    android:layout_alignBottom="@+id/textView4"
-                    android:layout_toRightOf="@+id/textView4"
-                    android:layout_toEndOf="@+id/textView4"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginStart="10dp" />
-
-                <TextView
-                    android:text=" @khanhtrannnn"
-                    android:textColor="@color/blue"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/textView4"
-                    android:layout_below="@+id/textView1"
-                    android:layout_alignLeft="@+id/textView1"
-                    android:layout_alignStart="@+id/textView1"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginLeft="-5dp"/>
-
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    app:srcCompat="@drawable/arrow_down"
-                    android:id="@+id/arrow_down1"
-                    android:layout_alignTop="@+id/textView1"
-                    android:layout_alignParentRight="true"
-                    android:layout_alignParentEnd="true" />
-
-                <LinearLayout
-                    android:orientation="horizontal"
+                <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="20dp"
-                    android:layout_below="@+id/avt1"
-                    android:layout_toRightOf="@+id/avt1"
-                    android:layout_toEndOf="@+id/avt1">
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.06"
+                    android:paddingBottom="5dp">
 
                     <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        app:srcCompat="@drawable/reply"
-                        android:id="@+id/reply" />
+                        android:id="@+id/avt1"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        app:srcCompat="@drawable/avt2" />
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/avt1"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_toEndOf="@+id/avt1"
+                        android:layout_toRightOf="@+id/avt1"
+                        android:text="Luke Sean"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/textView1"
+                        android:layout_alignBottom="@+id/textView1"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_toEndOf="@+id/textView1"
+                        android:layout_toRightOf="@+id/textView1"
+                        android:text=" @LukeDaDD - 2d"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/textView4"
+                        android:layout_alignBottom="@+id/textView4"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/textView4"
+                        android:layout_toRightOf="@+id/textView4"
+                        android:text="Hello"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/textView1"
+                        android:layout_alignStart="@+id/textView1"
+                        android:layout_below="@+id/textView1"
+                        android:layout_marginLeft="-5dp"
+                        android:layout_marginTop="8dp"
+                        android:text=" @khanhtrannnn"
+                        android:textColor="@color/blue" />
 
                     <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        app:srcCompat="@drawable/retweet"
-                        android:id="@+id/retweet"/>
+                        android:id="@+id/arrow_down1"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@+id/textView1"
+                        app:srcCompat="@drawable/arrow_down" />
 
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        app:srcCompat="@drawable/heart"
-                        android:id="@+id/heart" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_below="@+id/avt1"
+                        android:layout_toEndOf="@+id/avt1"
+                        android:layout_toRightOf="@+id/avt1"
+                        android:orientation="horizontal">
 
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        app:srcCompat="@drawable/message"
-                        android:id="@+id/message" />
+                        <ImageView
+                            android:id="@+id/reply"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/reply" />
 
-                </LinearLayout>
+                        <ImageView
+                            android:id="@+id/retweet"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/retweet" />
+
+                        <ImageView
+                            android:id="@+id/heart"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/heart" />
+
+                        <ImageView
+                            android:id="@+id/message"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/message" />
+
+                    </LinearLayout>
 
 
-            </RelativeLayout>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="2dp"
-                android:id="@+id/border_line"
-                android:background="@drawable/border_style"
-                android:layout_weight="0.06" />
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="0.06">
-
-                <ImageView
-                    android:layout_width="65dp"
-                    android:layout_height="65dp"
-                    app:srcCompat="@drawable/avt1"
-                    android:id="@+id/avt1"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginLeft="10dp"/>
-
-                <TextView
-                    android:text="Tùng Lâm"
-                    android:textStyle="bold"
-                    android:textColor="@color/black"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignTop="@+id/avt1"
-                    android:layout_toRightOf="@+id/avt1"
-                    android:layout_toEndOf="@+id/avt1"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginStart="15dp"
-                    android:id="@+id/textView1" />
+                </RelativeLayout>
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/textView2"
-                    android:text=" @ngstnglm - 1d"
-                    android:textSize="12dp"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_alignBaseline="@+id/textView1"
-                    android:layout_alignBottom="@+id/textView1"
-                    android:layout_toRightOf="@+id/textView1"
-                    android:layout_toEndOf="@+id/textView1" />
-
-                <TextView
-                    android:text="reply to Khanh"
-                    android:textColor="@color/black"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/textView3"
-                    android:layout_alignBaseline="@+id/textView4"
-                    android:layout_alignBottom="@+id/textView4"
-                    android:layout_toRightOf="@+id/textView4"
-                    android:layout_toEndOf="@+id/textView4"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginStart="10dp" />
-
-                <TextView
-                    android:text=" @khanhtrannnn"
-                    android:textColor="@color/blue"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/textView4"
-                    android:layout_below="@+id/textView1"
-                    android:layout_alignLeft="@+id/textView1"
-                    android:layout_alignStart="@+id/textView1"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginLeft="-5dp"/>
-
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    app:srcCompat="@drawable/arrow_down"
-                    android:id="@+id/arrow_down1"
-                    android:layout_alignTop="@+id/textView1"
-                    android:layout_alignParentRight="true"
-                    android:layout_alignParentEnd="true" />
-
-                <LinearLayout
-                    android:orientation="horizontal"
+                    android:id="@+id/border_line"
                     android:layout_width="match_parent"
-                    android:layout_height="20dp"
-                    android:layout_below="@+id/avt1"
-                    android:layout_toRightOf="@+id/avt1"
-                    android:layout_toEndOf="@+id/avt1">
+                    android:layout_height="2dp"
+                    android:layout_weight="0.06"
+                    android:background="@drawable/border_style" />
 
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        app:srcCompat="@drawable/reply"
-                        android:id="@+id/reply" />
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        app:srcCompat="@drawable/retweet"
-                        android:id="@+id/retweet"/>
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        app:srcCompat="@drawable/heart"
-                        android:id="@+id/heart" />
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        app:srcCompat="@drawable/message"
-                        android:id="@+id/message" />
-
-                </LinearLayout>
-
-            </RelativeLayout>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="2dp"
-                android:id="@+id/border_line"
-                android:background="@drawable/border_style"
-                android:layout_weight="0.06" />
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="0.06">
-
-                <ImageView
-                    android:layout_width="65dp"
-                    android:layout_height="65dp"
-                    app:srcCompat="@drawable/avt2"
-                    android:id="@+id/avt1"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginLeft="10dp"/>
-
-                <TextView
-                    android:text="Luke Sean"
-                    android:textStyle="bold"
-                    android:textColor="@color/black"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignTop="@+id/avt1"
-                    android:layout_toRightOf="@+id/avt1"
-                    android:layout_toEndOf="@+id/avt1"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginStart="15dp"
-                    android:id="@+id/textView1" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/textView2"
-                    android:text=" @LukeDaDD - 2d"
-                    android:textSize="12dp"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_alignBaseline="@+id/textView1"
-                    android:layout_alignBottom="@+id/textView1"
-                    android:layout_toRightOf="@+id/textView1"
-                    android:layout_toEndOf="@+id/textView1" />
-
-                <TextView
-                    android:text="Hello"
-                    android:textColor="@color/black"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/textView3"
-                    android:layout_alignBaseline="@+id/textView4"
-                    android:layout_alignBottom="@+id/textView4"
-                    android:layout_toRightOf="@+id/textView4"
-                    android:layout_toEndOf="@+id/textView4"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginStart="10dp" />
-
-                <TextView
-                    android:text=" @khanhtrannnn"
-                    android:textColor="@color/blue"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/textView4"
-                    android:layout_below="@+id/textView1"
-                    android:layout_alignLeft="@+id/textView1"
-                    android:layout_alignStart="@+id/textView1"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginLeft="-5dp"/>
-
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    app:srcCompat="@drawable/arrow_down"
-                    android:id="@+id/arrow_down1"
-                    android:layout_alignTop="@+id/textView1"
-                    android:layout_alignParentRight="true"
-                    android:layout_alignParentEnd="true" />
-
-                <LinearLayout
-                    android:orientation="horizontal"
+                <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="20dp"
-                    android:layout_below="@+id/avt1"
-                    android:layout_toRightOf="@+id/avt1"
-                    android:layout_toEndOf="@+id/avt1">
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.06">
 
                     <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        app:srcCompat="@drawable/reply"
-                        android:id="@+id/reply" />
+                        android:id="@+id/avt1"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        app:srcCompat="@drawable/avt1" />
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/avt1"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_toEndOf="@+id/avt1"
+                        android:layout_toRightOf="@+id/avt1"
+                        android:text="Tùng Lâm"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/textView1"
+                        android:layout_alignBottom="@+id/textView1"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_toEndOf="@+id/textView1"
+                        android:layout_toRightOf="@+id/textView1"
+                        android:text=" @ngstnglm - 1d"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/textView4"
+                        android:layout_alignBottom="@+id/textView4"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/textView4"
+                        android:layout_toRightOf="@+id/textView4"
+                        android:text="reply to Khanh"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/textView1"
+                        android:layout_alignStart="@+id/textView1"
+                        android:layout_below="@+id/textView1"
+                        android:layout_marginLeft="-5dp"
+                        android:layout_marginTop="8dp"
+                        android:text=" @khanhtrannnn"
+                        android:textColor="@color/blue" />
 
                     <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        app:srcCompat="@drawable/retweet"
-                        android:id="@+id/retweet"/>
+                        android:id="@+id/arrow_down1"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@+id/textView1"
+                        app:srcCompat="@drawable/arrow_down" />
 
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        app:srcCompat="@drawable/heart"
-                        android:id="@+id/heart" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_below="@+id/avt1"
+                        android:layout_toEndOf="@+id/avt1"
+                        android:layout_toRightOf="@+id/avt1"
+                        android:orientation="horizontal">
 
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        app:srcCompat="@drawable/message"
-                        android:id="@+id/message" />
+                        <ImageView
+                            android:id="@+id/reply"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/reply" />
 
-                </LinearLayout>
+                        <ImageView
+                            android:id="@+id/retweet"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/retweet" />
 
+                        <ImageView
+                            android:id="@+id/heart"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/heart" />
 
-            </RelativeLayout>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="2dp"
-                android:id="@+id/border_line"
-                android:background="@drawable/border_style"
-                android:layout_weight="0.06" />
+                        <ImageView
+                            android:id="@+id/message"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/message" />
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="0.06">
+                    </LinearLayout>
 
-                <ImageView
-                    android:layout_width="65dp"
-                    android:layout_height="65dp"
-                    app:srcCompat="@drawable/avt1"
-                    android:id="@+id/avt1"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginLeft="10dp"/>
-
-                <TextView
-                    android:text="Tùng Lâm"
-                    android:textStyle="bold"
-                    android:textColor="@color/black"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignTop="@+id/avt1"
-                    android:layout_toRightOf="@+id/avt1"
-                    android:layout_toEndOf="@+id/avt1"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginStart="15dp"
-                    android:id="@+id/textView1" />
+                </RelativeLayout>
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/textView2"
-                    android:text=" @ngstnglm - 1d"
-                    android:textSize="12dp"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_alignBaseline="@+id/textView1"
-                    android:layout_alignBottom="@+id/textView1"
-                    android:layout_toRightOf="@+id/textView1"
-                    android:layout_toEndOf="@+id/textView1" />
-
-                <TextView
-                    android:text="reply to Khanh"
-                    android:textColor="@color/black"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/textView3"
-                    android:layout_alignBaseline="@+id/textView4"
-                    android:layout_alignBottom="@+id/textView4"
-                    android:layout_toRightOf="@+id/textView4"
-                    android:layout_toEndOf="@+id/textView4"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginStart="10dp" />
-
-                <TextView
-                    android:text=" @khanhtrannnn"
-                    android:textColor="@color/blue"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/textView4"
-                    android:layout_below="@+id/textView1"
-                    android:layout_alignLeft="@+id/textView1"
-                    android:layout_alignStart="@+id/textView1"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginLeft="-5dp"/>
-
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    app:srcCompat="@drawable/arrow_down"
-                    android:id="@+id/arrow_down1"
-                    android:layout_alignTop="@+id/textView1"
-                    android:layout_alignParentRight="true"
-                    android:layout_alignParentEnd="true" />
-
-                <LinearLayout
-                    android:orientation="horizontal"
+                    android:id="@+id/border_line"
                     android:layout_width="match_parent"
-                    android:layout_height="20dp"
-                    android:layout_below="@+id/avt1"
-                    android:layout_toRightOf="@+id/avt1"
-                    android:layout_toEndOf="@+id/avt1">
+                    android:layout_height="2dp"
+                    android:layout_weight="0.06"
+                    android:background="@drawable/border_style" />
 
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        app:srcCompat="@drawable/reply"
-                        android:id="@+id/reply" />
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        app:srcCompat="@drawable/retweet"
-                        android:id="@+id/retweet"/>
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        app:srcCompat="@drawable/heart"
-                        android:id="@+id/heart" />
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        app:srcCompat="@drawable/message"
-                        android:id="@+id/message" />
-
-                </LinearLayout>
-
-            </RelativeLayout>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="2dp"
-                android:id="@+id/border_line"
-                android:background="@drawable/border_style"
-                android:layout_weight="0.06" />
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="0.06">
-
-                <ImageView
-                    android:layout_width="65dp"
-                    android:layout_height="65dp"
-                    app:srcCompat="@drawable/avt2"
-                    android:id="@+id/avt1"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginLeft="10dp"/>
-
-                <TextView
-                    android:text="Luke Sean"
-                    android:textStyle="bold"
-                    android:textColor="@color/black"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignTop="@+id/avt1"
-                    android:layout_toRightOf="@+id/avt1"
-                    android:layout_toEndOf="@+id/avt1"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginStart="15dp"
-                    android:id="@+id/textView1" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/textView2"
-                    android:text=" @LukeDaDD - 2d"
-                    android:textSize="12dp"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_alignBaseline="@+id/textView1"
-                    android:layout_alignBottom="@+id/textView1"
-                    android:layout_toRightOf="@+id/textView1"
-                    android:layout_toEndOf="@+id/textView1" />
-
-                <TextView
-                    android:text="Hello"
-                    android:textColor="@color/black"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/textView3"
-                    android:layout_alignBaseline="@+id/textView4"
-                    android:layout_alignBottom="@+id/textView4"
-                    android:layout_toRightOf="@+id/textView4"
-                    android:layout_toEndOf="@+id/textView4"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginStart="10dp" />
-
-                <TextView
-                    android:text=" @khanhtrannnn"
-                    android:textColor="@color/blue"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/textView4"
-                    android:layout_below="@+id/textView1"
-                    android:layout_alignLeft="@+id/textView1"
-                    android:layout_alignStart="@+id/textView1"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginLeft="-5dp"/>
-
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    app:srcCompat="@drawable/arrow_down"
-                    android:id="@+id/arrow_down1"
-                    android:layout_alignTop="@+id/textView1"
-                    android:layout_alignParentRight="true"
-                    android:layout_alignParentEnd="true" />
-
-                <LinearLayout
-                    android:orientation="horizontal"
+                <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="20dp"
-                    android:layout_below="@+id/avt1"
-                    android:layout_toRightOf="@+id/avt1"
-                    android:layout_toEndOf="@+id/avt1">
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.06"
+                    android:paddingBottom="5dp">
 
                     <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        app:srcCompat="@drawable/reply"
-                        android:id="@+id/reply" />
+                        android:id="@+id/avt1"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        app:srcCompat="@drawable/avt2" />
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/avt1"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_toEndOf="@+id/avt1"
+                        android:layout_toRightOf="@+id/avt1"
+                        android:text="Luke Sean"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/textView1"
+                        android:layout_alignBottom="@+id/textView1"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_toEndOf="@+id/textView1"
+                        android:layout_toRightOf="@+id/textView1"
+                        android:text=" @LukeDaDD - 2d"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/textView4"
+                        android:layout_alignBottom="@+id/textView4"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/textView4"
+                        android:layout_toRightOf="@+id/textView4"
+                        android:text="Hello"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/textView1"
+                        android:layout_alignStart="@+id/textView1"
+                        android:layout_below="@+id/textView1"
+                        android:layout_marginLeft="-5dp"
+                        android:layout_marginTop="8dp"
+                        android:text=" @khanhtrannnn"
+                        android:textColor="@color/blue" />
 
                     <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        app:srcCompat="@drawable/retweet"
-                        android:id="@+id/retweet"/>
+                        android:id="@+id/arrow_down1"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@+id/textView1"
+                        app:srcCompat="@drawable/arrow_down" />
 
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        app:srcCompat="@drawable/heart"
-                        android:id="@+id/heart" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_below="@+id/avt1"
+                        android:layout_toEndOf="@+id/avt1"
+                        android:layout_toRightOf="@+id/avt1"
+                        android:orientation="horizontal">
 
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        app:srcCompat="@drawable/message"
-                        android:id="@+id/message" />
+                        <ImageView
+                            android:id="@+id/reply"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/reply" />
 
-                </LinearLayout>
+                        <ImageView
+                            android:id="@+id/retweet"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/retweet" />
+
+                        <ImageView
+                            android:id="@+id/heart"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/heart" />
+
+                        <ImageView
+                            android:id="@+id/message"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/message" />
+
+                    </LinearLayout>
 
 
-            </RelativeLayout>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="2dp"
-                android:id="@+id/border_line"
-                android:background="@drawable/border_style"
-                android:layout_weight="0.06" />
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="0.06">
-
-                <ImageView
-                    android:layout_width="65dp"
-                    android:layout_height="65dp"
-                    app:srcCompat="@drawable/avt1"
-                    android:id="@+id/avt1"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginLeft="10dp"/>
-
-                <TextView
-                    android:text="Tùng Lâm"
-                    android:textStyle="bold"
-                    android:textColor="@color/black"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignTop="@+id/avt1"
-                    android:layout_toRightOf="@+id/avt1"
-                    android:layout_toEndOf="@+id/avt1"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginStart="15dp"
-                    android:id="@+id/textView1" />
+                </RelativeLayout>
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/textView2"
-                    android:text=" @ngstnglm - 1d"
-                    android:textSize="12dp"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_alignBaseline="@+id/textView1"
-                    android:layout_alignBottom="@+id/textView1"
-                    android:layout_toRightOf="@+id/textView1"
-                    android:layout_toEndOf="@+id/textView1" />
-
-                <TextView
-                    android:text="reply to Khanh"
-                    android:textColor="@color/black"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/textView3"
-                    android:layout_alignBaseline="@+id/textView4"
-                    android:layout_alignBottom="@+id/textView4"
-                    android:layout_toRightOf="@+id/textView4"
-                    android:layout_toEndOf="@+id/textView4"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginStart="10dp" />
-
-                <TextView
-                    android:text=" @khanhtrannnn"
-                    android:textColor="@color/blue"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/textView4"
-                    android:layout_below="@+id/textView1"
-                    android:layout_alignLeft="@+id/textView1"
-                    android:layout_alignStart="@+id/textView1"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginLeft="-5dp"/>
-
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    app:srcCompat="@drawable/arrow_down"
-                    android:id="@+id/arrow_down1"
-                    android:layout_alignTop="@+id/textView1"
-                    android:layout_alignParentRight="true"
-                    android:layout_alignParentEnd="true" />
-
-                <LinearLayout
-                    android:orientation="horizontal"
+                    android:id="@+id/border_line"
                     android:layout_width="match_parent"
-                    android:layout_height="20dp"
-                    android:layout_below="@+id/avt1"
-                    android:layout_toRightOf="@+id/avt1"
-                    android:layout_toEndOf="@+id/avt1">
+                    android:layout_height="2dp"
+                    android:layout_weight="0.06"
+                    android:background="@drawable/border_style" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.06"
+                    android:paddingBottom="5dp">
 
                     <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        app:srcCompat="@drawable/reply"
-                        android:id="@+id/reply" />
+                        android:id="@+id/avt1"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        app:srcCompat="@drawable/avt1" />
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/avt1"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_toEndOf="@+id/avt1"
+                        android:layout_toRightOf="@+id/avt1"
+                        android:text="Tùng Lâm"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/textView1"
+                        android:layout_alignBottom="@+id/textView1"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_toEndOf="@+id/textView1"
+                        android:layout_toRightOf="@+id/textView1"
+                        android:text=" @ngstnglm - 1d"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/textView4"
+                        android:layout_alignBottom="@+id/textView4"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/textView4"
+                        android:layout_toRightOf="@+id/textView4"
+                        android:text="reply to Khanh"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/textView1"
+                        android:layout_alignStart="@+id/textView1"
+                        android:layout_below="@+id/textView1"
+                        android:layout_marginLeft="-5dp"
+                        android:layout_marginTop="8dp"
+                        android:text=" @khanhtrannnn"
+                        android:textColor="@color/blue" />
 
                     <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        app:srcCompat="@drawable/retweet"
-                        android:id="@+id/retweet"/>
+                        android:id="@+id/arrow_down1"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@+id/textView1"
+                        app:srcCompat="@drawable/arrow_down" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_below="@+id/avt1"
+                        android:layout_toEndOf="@+id/avt1"
+                        android:layout_toRightOf="@+id/avt1"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/reply"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/reply" />
+
+                        <ImageView
+                            android:id="@+id/retweet"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/retweet" />
+
+                        <ImageView
+                            android:id="@+id/heart"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/heart" />
+
+                        <ImageView
+                            android:id="@+id/message"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/message" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/border_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_weight="0.06"
+                    android:background="@drawable/border_style" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.06"
+                    android:paddingBottom="5dp">
 
                     <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        app:srcCompat="@drawable/heart"
-                        android:id="@+id/heart" />
+                        android:id="@+id/avt1"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        app:srcCompat="@drawable/avt2" />
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/avt1"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_toEndOf="@+id/avt1"
+                        android:layout_toRightOf="@+id/avt1"
+                        android:text="Luke Sean"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/textView1"
+                        android:layout_alignBottom="@+id/textView1"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_toEndOf="@+id/textView1"
+                        android:layout_toRightOf="@+id/textView1"
+                        android:text=" @LukeDaDD - 2d"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/textView4"
+                        android:layout_alignBottom="@+id/textView4"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/textView4"
+                        android:layout_toRightOf="@+id/textView4"
+                        android:text="Hello"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/textView1"
+                        android:layout_alignStart="@+id/textView1"
+                        android:layout_below="@+id/textView1"
+                        android:layout_marginLeft="-5dp"
+                        android:layout_marginTop="8dp"
+                        android:text=" @khanhtrannnn"
+                        android:textColor="@color/blue" />
 
                     <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        app:srcCompat="@drawable/message"
-                        android:id="@+id/message" />
+                        android:id="@+id/arrow_down1"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@+id/textView1"
+                        app:srcCompat="@drawable/arrow_down" />
 
-                </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_below="@+id/avt1"
+                        android:layout_toEndOf="@+id/avt1"
+                        android:layout_toRightOf="@+id/avt1"
+                        android:orientation="horizontal">
 
-            </RelativeLayout>
+                        <ImageView
+                            android:id="@+id/reply"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/reply" />
 
-        </LinearLayout>
-    </ScrollView>
+                        <ImageView
+                            android:id="@+id/retweet"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/retweet" />
+
+                        <ImageView
+                            android:id="@+id/heart"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/heart" />
+
+                        <ImageView
+                            android:id="@+id/message"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/message" />
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/border_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_weight="0.06"
+                    android:background="@drawable/border_style" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.06"
+                    android:paddingBottom="5dp">
+
+                    <ImageView
+                        android:id="@+id/avt1"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        app:srcCompat="@drawable/avt1" />
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/avt1"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_toEndOf="@+id/avt1"
+                        android:layout_toRightOf="@+id/avt1"
+                        android:text="Tùng Lâm"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/textView1"
+                        android:layout_alignBottom="@+id/textView1"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_toEndOf="@+id/textView1"
+                        android:layout_toRightOf="@+id/textView1"
+                        android:text=" @ngstnglm - 1d"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/textView4"
+                        android:layout_alignBottom="@+id/textView4"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/textView4"
+                        android:layout_toRightOf="@+id/textView4"
+                        android:text="reply to Khanh"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/textView1"
+                        android:layout_alignStart="@+id/textView1"
+                        android:layout_below="@+id/textView1"
+                        android:layout_marginLeft="-5dp"
+                        android:layout_marginTop="8dp"
+                        android:text=" @khanhtrannnn"
+                        android:textColor="@color/blue" />
+
+                    <ImageView
+                        android:id="@+id/arrow_down1"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@+id/textView1"
+                        app:srcCompat="@drawable/arrow_down" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_below="@+id/avt1"
+                        android:layout_toEndOf="@+id/avt1"
+                        android:layout_toRightOf="@+id/avt1"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/reply"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/reply" />
+
+                        <ImageView
+                            android:id="@+id/retweet"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/retweet" />
+
+                        <ImageView
+                            android:id="@+id/heart"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/heart" />
+
+                        <ImageView
+                            android:id="@+id/message"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/message" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/border_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_weight="0.06"
+                    android:background="@drawable/border_style" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.06"
+                    android:paddingBottom="5dp">
+
+                    <ImageView
+                        android:id="@+id/avt1"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        app:srcCompat="@drawable/avt2" />
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/avt1"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_toEndOf="@+id/avt1"
+                        android:layout_toRightOf="@+id/avt1"
+                        android:text="Luke Sean"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/textView1"
+                        android:layout_alignBottom="@+id/textView1"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_toEndOf="@+id/textView1"
+                        android:layout_toRightOf="@+id/textView1"
+                        android:text=" @LukeDaDD - 2d"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/textView4"
+                        android:layout_alignBottom="@+id/textView4"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/textView4"
+                        android:layout_toRightOf="@+id/textView4"
+                        android:text="Hello"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/textView1"
+                        android:layout_alignStart="@+id/textView1"
+                        android:layout_below="@+id/textView1"
+                        android:layout_marginLeft="-5dp"
+                        android:layout_marginTop="8dp"
+                        android:text=" @khanhtrannnn"
+                        android:textColor="@color/blue" />
+
+                    <ImageView
+                        android:id="@+id/arrow_down1"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@+id/textView1"
+                        app:srcCompat="@drawable/arrow_down" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_below="@+id/avt1"
+                        android:layout_toEndOf="@+id/avt1"
+                        android:layout_toRightOf="@+id/avt1"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/reply"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/reply" />
+
+                        <ImageView
+                            android:id="@+id/retweet"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/retweet" />
+
+                        <ImageView
+                            android:id="@+id/heart"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/heart" />
+
+                        <ImageView
+                            android:id="@+id/message"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/message" />
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/border_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_weight="0.06"
+                    android:background="@drawable/border_style" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.06"
+                    android:paddingBottom="5dp">
+
+                    <ImageView
+                        android:id="@+id/avt1"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        app:srcCompat="@drawable/avt1" />
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/avt1"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_toEndOf="@+id/avt1"
+                        android:layout_toRightOf="@+id/avt1"
+                        android:text="Tùng Lâm"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/textView1"
+                        android:layout_alignBottom="@+id/textView1"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_toEndOf="@+id/textView1"
+                        android:layout_toRightOf="@+id/textView1"
+                        android:text=" @ngstnglm - 1d"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/textView4"
+                        android:layout_alignBottom="@+id/textView4"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/textView4"
+                        android:layout_toRightOf="@+id/textView4"
+                        android:text="reply to Khanh"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/textView1"
+                        android:layout_alignStart="@+id/textView1"
+                        android:layout_below="@+id/textView1"
+                        android:layout_marginLeft="-5dp"
+                        android:layout_marginTop="8dp"
+                        android:text=" @khanhtrannnn"
+                        android:textColor="@color/blue" />
+
+                    <ImageView
+                        android:id="@+id/arrow_down1"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@+id/textView1"
+                        app:srcCompat="@drawable/arrow_down" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_below="@+id/avt1"
+                        android:layout_toEndOf="@+id/avt1"
+                        android:layout_toRightOf="@+id/avt1"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/reply"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/reply" />
+
+                        <ImageView
+                            android:id="@+id/retweet"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/retweet" />
+
+                        <ImageView
+                            android:id="@+id/heart"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/heart" />
+
+                        <ImageView
+                            android:id="@+id/message"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/message" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="400dp"
+            android:layout_weight="0.54">
+
+            <ImageView
+                android:id="@+id/tweet"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_weight="0.28"
+                app:srcCompat="@drawable/tweet" />
+
+        </RelativeLayout>
+    </FrameLayout>
+
 </LinearLayout>
