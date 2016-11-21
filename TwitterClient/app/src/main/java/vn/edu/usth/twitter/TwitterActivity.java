@@ -13,6 +13,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import vn.edu.usth.twitter.Fragment.Home;
+import vn.edu.usth.twitter.Fragment.Notification;
 
 public class TwitterActivity extends AppCompatActivity {
 
@@ -46,13 +47,14 @@ public class TwitterActivity extends AppCompatActivity {
         }
         @Override
         public Fragment getItem(int page) {
-            return new Home();
+//            return new Home();
 // returns an instance of vn.edu.usth.weather.Fragment corresponding to the specified page
-//        switch (page) {
-//            case 0: return WeatherAndForecast.newInstance();
-//            case 1: return WeatherAndForecast.newInstance();
-//            case 2: return WeatherAndForecast.newInstance();
-//        }
+        switch (page) {
+            case 0: return new Home();
+            case 1: return new Notification();
+            case 2: return new Home();
+            default: return new Home();
+        }
 //        return new EmptyFragment(); // failsafe
         }
         @Override

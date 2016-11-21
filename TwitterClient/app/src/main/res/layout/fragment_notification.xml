@@ -16,7 +16,7 @@
             android:layout_width="65dp"
             android:layout_height="65dp"
             app:srcCompat="@drawable/avt1"
-            android:id="@+id/avt"
+            android:id="@+id/avt1"
             android:layout_marginTop="10dp"
             android:layout_marginLeft="10dp"/>
 
@@ -26,9 +26,9 @@
             android:textColor="@color/black"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignTop="@+id/avt"
-            android:layout_toRightOf="@+id/avt"
-            android:layout_toEndOf="@+id/avt"
+            android:layout_alignTop="@+id/avt1"
+            android:layout_toRightOf="@+id/avt1"
+            android:layout_toEndOf="@+id/avt1"
             android:layout_marginLeft="15dp"
             android:layout_marginStart="15dp"
             android:id="@+id/textView1" />
@@ -85,7 +85,7 @@
             android:layout_width="match_parent"
             android:layout_height="20dp"
             android:weightSum="1"
-            android:layout_below="@+id/avt"
+            android:layout_below="@+id/avt1"
             android:layout_alignLeft="@+id/textView1"
             android:layout_alignStart="@+id/textView1">
 
@@ -135,7 +135,7 @@
             android:layout_width="65dp"
             android:layout_height="65dp"
             app:srcCompat="@drawable/avt2"
-            android:id="@+id/avt"
+            android:id="@+id/avt1"
             android:layout_marginTop="10dp"
             android:layout_marginLeft="10dp"/>
 
@@ -145,9 +145,9 @@
             android:textColor="@color/black"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignTop="@+id/avt"
-            android:layout_toRightOf="@+id/avt"
-            android:layout_toEndOf="@+id/avt"
+            android:layout_alignTop="@+id/avt1"
+            android:layout_toRightOf="@+id/avt1"
+            android:layout_toEndOf="@+id/avt1"
             android:layout_marginLeft="15dp"
             android:layout_marginStart="15dp"
             android:id="@+id/textView1" />
@@ -204,7 +204,7 @@
             android:layout_width="match_parent"
             android:layout_height="20dp"
             android:weightSum="1"
-            android:layout_below="@+id/avt"
+            android:layout_below="@+id/avt1"
             android:layout_alignLeft="@+id/textView1"
             android:layout_alignStart="@+id/textView1">
 
