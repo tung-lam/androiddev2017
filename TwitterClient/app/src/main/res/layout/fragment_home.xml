@@ -55,7 +55,7 @@
                         android:layout_marginStart="5dp"
                         android:layout_toEndOf="@+id/textView1"
                         android:layout_toRightOf="@+id/textView1"
-                        android:text=" @ngstnglm - 1d"
+                        android:text=" @ngstnglm - 2h"
                         android:textSize="12dp" />
 
                     <TextView
@@ -68,7 +68,7 @@
                         android:layout_marginStart="10dp"
                         android:layout_toEndOf="@+id/textView4"
                         android:layout_toRightOf="@+id/textView4"
-                        android:text="reply to Khanh"
+                        android:text="This is my first tweet"
                         android:textColor="@color/black" />
 
                     <TextView
@@ -80,7 +80,7 @@
                         android:layout_below="@+id/textView1"
                         android:layout_marginLeft="-5dp"
                         android:layout_marginTop="8dp"
-                        android:text=" @khanhtrannnn"
+                        android:text=" #Twitter"
                         android:textColor="@color/blue" />
 
                     <ImageView
@@ -176,8 +176,21 @@
                         android:layout_marginStart="5dp"
                         android:layout_toEndOf="@+id/textView1"
                         android:layout_toRightOf="@+id/textView1"
-                        android:text=" @LukeDaDD - 2d"
+                        android:text=" @LukeDaDD - 18h"
                         android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/textView1"
+                        android:layout_alignStart="@+id/textView1"
+                        android:layout_below="@+id/textView1"
+                        android:layout_marginLeft="-5dp"
+                        android:layout_marginTop="8dp"
+                        android:text="I'm studying at USTH"
+
+                        android:textColor="@color/black" />
 
                     <TextView
                         android:id="@+id/textView3"
@@ -189,19 +202,8 @@
                         android:layout_marginStart="10dp"
                         android:layout_toEndOf="@+id/textView4"
                         android:layout_toRightOf="@+id/textView4"
-                        android:text="Hello"
-                        android:textColor="@color/black" />
+                        android:text="#USTH"
 
-                    <TextView
-                        android:id="@+id/textView4"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignLeft="@+id/textView1"
-                        android:layout_alignStart="@+id/textView1"
-                        android:layout_below="@+id/textView1"
-                        android:layout_marginLeft="-5dp"
-                        android:layout_marginTop="8dp"
-                        android:text=" @khanhtrannnn"
                         android:textColor="@color/blue" />
 
                     <ImageView
@@ -298,7 +300,7 @@
                         android:layout_marginStart="5dp"
                         android:layout_toEndOf="@+id/textView1"
                         android:layout_toRightOf="@+id/textView1"
-                        android:text=" @LukeDaDD - 2d"
+                        android:text=" @LukeDaDD - 1d"
                         android:textSize="12dp" />
 
                     <TextView
@@ -311,7 +313,7 @@
                         android:layout_marginStart="10dp"
                         android:layout_toEndOf="@+id/textView4"
                         android:layout_toRightOf="@+id/textView4"
-                        android:text="Hello"
+                        android:text="Hi bro ! How have you been these days ?"
                         android:textColor="@color/black" />
 
                     <TextView
@@ -323,7 +325,7 @@
                         android:layout_below="@+id/textView1"
                         android:layout_marginLeft="-5dp"
                         android:layout_marginTop="8dp"
-                        android:text=" @khanhtrannnn"
+                        android:text=" @ngstnglm"
                         android:textColor="@color/blue" />
 
                     <ImageView
@@ -419,7 +421,7 @@
                         android:layout_marginStart="5dp"
                         android:layout_toEndOf="@+id/textView1"
                         android:layout_toRightOf="@+id/textView1"
-                        android:text=" @ngstnglm - 1d"
+                        android:text=" @ngstnglm - 2d"
                         android:textSize="12dp" />
 
                     <TextView
@@ -432,7 +434,7 @@
                         android:layout_marginStart="10dp"
                         android:layout_toEndOf="@+id/textView4"
                         android:layout_toRightOf="@+id/textView4"
-                        android:text="reply to Khanh"
+                        android:text="Welcome to Twitter !"
                         android:textColor="@color/black" />
 
                     <TextView
@@ -662,7 +664,7 @@
                         android:layout_marginStart="5dp"
                         android:layout_toEndOf="@+id/textView1"
                         android:layout_toRightOf="@+id/textView1"
-                        android:text=" @ngstnglm - 1d"
+                        android:text=" @ngstnglm - 1w"
                         android:textSize="12dp" />
 
                     <TextView
@@ -783,7 +785,7 @@
                         android:layout_marginStart="5dp"
                         android:layout_toEndOf="@+id/textView1"
                         android:layout_toRightOf="@+id/textView1"
-                        android:text=" @LukeDaDD - 2d"
+                        android:text=" @LukeDaDD - 2w"
                         android:textSize="12dp" />
 
                     <TextView
@@ -905,7 +907,7 @@
                         android:layout_marginStart="5dp"
                         android:layout_toEndOf="@+id/textView1"
                         android:layout_toRightOf="@+id/textView1"
-                        android:text=" @ngstnglm - 1d"
+                        android:text=" @ngstnglm - 1m"
                         android:textSize="12dp" />
 
                     <TextView
