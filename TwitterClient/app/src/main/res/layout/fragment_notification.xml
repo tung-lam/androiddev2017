@@ -24,7 +24,8 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="0.06">
+                    android:layout_weight="0.06"
+                    android:paddingBottom="5dp">
 
                     <ImageView
                         android:layout_width="65dp"
@@ -146,7 +147,8 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="0.06">
+                    android:layout_weight="0.06"
+                    android:paddingBottom="5dp">
 
                     <ImageView
                         android:layout_width="65dp"
@@ -268,7 +270,8 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="0.06">
+                    android:layout_weight="0.06"
+                    android:paddingBottom="5dp">
 
                     <ImageView
                         android:layout_width="65dp"
@@ -390,7 +393,8 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="0.06">
+                    android:layout_weight="0.06"
+                    android:paddingBottom="5dp">
 
                     <ImageView
                         android:layout_width="65dp"
@@ -513,7 +517,8 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="0.06">
+                    android:layout_weight="0.06"
+                    android:paddingBottom="5dp">
 
                     <ImageView
                         android:layout_width="65dp"
@@ -635,7 +640,8 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="0.06">
+                    android:layout_weight="0.06"
+                    android:paddingBottom="5dp">
 
                     <ImageView
                         android:layout_width="65dp"
@@ -758,7 +764,8 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="0.06">
+                    android:layout_weight="0.06"
+                    android:paddingBottom="5dp">
 
                     <ImageView
                         android:layout_width="33dp"
@@ -819,7 +826,8 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="0.06">
+                    android:layout_weight="0.06"
+                    android:paddingBottom="5dp">
 
                     <ImageView
                         android:layout_width="33dp"
@@ -874,13 +882,13 @@
 
         <RelativeLayout
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_weight="0.54"
-            android:layout_marginTop="470dp">
+            android:layout_marginTop="400dp">
 
             <ImageView
-                android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
                 app:srcCompat="@drawable/tweet"
                 android:id="@+id/tweet"
                 android:layout_weight="0.28"
