@@ -13,6 +13,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import vn.edu.usth.twitter.Fragment.Home;
+import vn.edu.usth.twitter.Fragment.Message;
 import vn.edu.usth.twitter.Fragment.Notification;
 
 public class TwitterActivity extends AppCompatActivity {
@@ -52,7 +53,7 @@ public class TwitterActivity extends AppCompatActivity {
         switch (page) {
             case 0: return new Home();
             case 1: return new Notification();
-            case 2: return new Home();
+            case 2: return new Message();
             default: return new Home();
         }
 //        return new EmptyFragment(); // failsafe
