@@ -72,4 +72,10 @@
 
     </RelativeLayout>
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:id="@+id/border_line"
+        android:background="@drawable/border_style"/>
+
 </LinearLayout>
