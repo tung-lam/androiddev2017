@@ -84,37 +84,37 @@
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="20dp"
-            android:weightSum="1"
             android:layout_below="@+id/avt1"
             android:layout_alignLeft="@+id/textView1"
             android:layout_alignStart="@+id/textView1">
 
             <ImageView
-                android:layout_width="15dp"
-                android:layout_height="15dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
                 app:srcCompat="@drawable/reply"
                 android:id="@+id/reply" />
 
             <ImageView
-                android:layout_width="127dp"
-                android:layout_height="18dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
                 app:srcCompat="@drawable/retweet"
                 android:id="@+id/retweet"/>
 
             <ImageView
-                android:layout_width="15dp"
-                android:layout_height="15dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
                 app:srcCompat="@drawable/heart"
-                android:id="@+id/heart"
-                android:layout_weight="0.04" />
+                android:id="@+id/heart" />
 
             <ImageView
-                android:layout_width="13dp"
-                android:layout_height="13dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
                 app:srcCompat="@drawable/message"
-                android:id="@+id/message"
-                android:layout_weight="0.9"
-                />
+                android:id="@+id/message" />
 
         </LinearLayout>
 
