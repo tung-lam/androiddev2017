@@ -37,9 +37,11 @@ import com.twitter.sdk.android.Twitter;
 import com.twitter.sdk.android.core.Callback;
 import com.twitter.sdk.android.core.Result;
 import com.twitter.sdk.android.core.TwitterAuthConfig;
+import com.twitter.sdk.android.core.TwitterCore;
 import com.twitter.sdk.android.core.TwitterException;
 import com.twitter.sdk.android.core.TwitterSession;
 import com.twitter.sdk.android.core.identity.TwitterLoginButton;
+import com.twitter.sdk.android.tweetcomposer.ComposerActivity;
 
 import io.fabric.sdk.android.Fabric;
 import java.util.ArrayList;
@@ -121,7 +123,13 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         loginButton.setCallback(new Callback<TwitterSession>() {
             @Override
             public void success(Result<TwitterSession> result) {
+                final TwitterSession session = TwitterCore.getInstance().getSessionManager()
+                        .getActiveSession();
                 Intent intent = new Intent(LoginActivity.this, TwitterActivity.class);
+                startActivity(intent);
+//                final Intent intent = new ComposerActivity.Builder(LoginActivity.this)
+//                        .session(session)
+//                        .createIntent();
                 startActivity(intent);
             }
             @Override
