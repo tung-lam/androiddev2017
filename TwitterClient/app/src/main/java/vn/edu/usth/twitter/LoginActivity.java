@@ -130,7 +130,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
 //                final Intent intent = new ComposerActivity.Builder(LoginActivity.this)
 //                        .session(session)
 //                        .createIntent();
-                startActivity(intent);
+//                startActivity(intent);
             }
             @Override
             public void failure(TwitterException exception) {

@@ -7,19 +7,49 @@
     android:orientation="vertical"
     android:weightSum="1">
 
-    <TextView android:id="@id/android:empty"
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center_horizontal|center_vertical"
-        android:text="No Tweets"/>
+        android:layout_height="match_parent">
 
-    <ListView android:id="@id/android:list"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:divider="#e1e8ed"
-        android:dividerHeight="1dp"
-        android:drawSelectorOnTop="false"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView android:id="@id/android:empty"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="No Tweets"/>
+
+            <ListView android:id="@id/android:list"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:divider="#e1e8ed"
+                android:dividerHeight="1dp"
+                android:drawSelectorOnTop="false"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="400dp"
+            android:layout_weight="0.54">
+
+            <ImageView
+                android:id="@+id/tweet"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_weight="0.28"
+                app:srcCompat="@drawable/tweet" />
+
+        </RelativeLayout>
+    </FrameLayout>
 
     <!--<FrameLayout-->
         <!--android:layout_width="match_parent"-->
