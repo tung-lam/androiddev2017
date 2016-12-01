@@ -36,17 +36,18 @@
             android:layout_marginTop="400dp"
             android:layout_weight="0.54">
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/tweet"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentTop="true"
                 android:layout_marginEnd="12dp"
                 android:layout_marginRight="12dp"
                 android:layout_weight="0.28"
-                app:srcCompat="@drawable/tweet" />
+                app:srcCompat="@drawable/tweet"
+                android:onClick="composeMessage" />
 
         </RelativeLayout>
     </FrameLayout>

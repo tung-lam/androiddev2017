@@ -1,6 +1,7 @@
 package vn.edu.usth.twitter.Fragment;
 
 import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -12,11 +13,14 @@ import android.view.ViewGroup;
 
 import com.twitter.sdk.android.Twitter;
 import com.twitter.sdk.android.core.TwitterSession;
+import com.twitter.sdk.android.tweetcomposer.ComposerActivity;
 import com.twitter.sdk.android.tweetui.SearchTimeline;
 import com.twitter.sdk.android.tweetui.TweetTimelineListAdapter;
 import com.twitter.sdk.android.tweetui.UserTimeline;
 
+import vn.edu.usth.twitter.LoginActivity;
 import vn.edu.usth.twitter.R;
+import vn.edu.usth.twitter.TwitterActivity;
 
 public class Home extends ListFragment {
     public Home() {
@@ -48,5 +52,13 @@ public class Home extends ListFragment {
 
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_home, container, false);
+    }
+
+    public void composeMessage(View view) {
+        TwitterSession session = Twitter.getSessionManager().getActiveSession();
+        final Intent intent = new ComposerActivity.Builder()
+                .session(session)
+                .createIntent();
+        startActivity(intent);
     }
 }

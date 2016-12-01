@@ -1,5 +1,6 @@
 package vn.edu.usth.twitter;
 
+import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
@@ -16,6 +17,9 @@ import android.text.SpannableString;
 import android.text.style.ImageSpan;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+
+import com.twitter.sdk.android.tweetcomposer.ComposerActivity;
 
 import vn.edu.usth.twitter.Fragment.Home;
 import vn.edu.usth.twitter.Fragment.Message;
