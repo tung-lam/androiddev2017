@@ -15,21 +15,53 @@
         android:drawSelectorOnTop="false"
         android:layout_alignParentTop="true" />
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/tweet"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_weight="0.28"
+        app:srcCompat="@drawable/tweet"
+        android:layout_marginTop="455dp"
+        android:paddingLeft="290dp" />
 
-        <ImageView
-            android:id="@+id/tweet"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentRight="true"
-            android:layout_marginBottom="12dp"
-            android:layout_marginRight="12dp"
-            android:layout_weight="0.28"
-            app:srcCompat="@drawable/tweet" />
-    </RelativeLayout>
+</FrameLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/tweet"-->
+            <!--android:layout_width="60dp"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_marginBottom="12dp"-->
+            <!--android:layout_marginRight="12dp"-->
+            <!--android:layout_weight="0.28"-->
+            <!--app:srcCompat="@drawable/tweet" />-->
+    <!--</RelativeLayout>-->
 
 
     <!--<FrameLayout-->
@@ -1234,5 +1266,5 @@
 
 
     <!--</FrameLayout>-->
-</FrameLayout>
+
 
