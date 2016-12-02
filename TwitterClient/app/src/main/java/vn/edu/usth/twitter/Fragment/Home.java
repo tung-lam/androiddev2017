@@ -54,11 +54,11 @@ public class Home extends ListFragment {
         return inflater.inflate(R.layout.fragment_home, container, false);
     }
 
-    public void composeMessage(View view) {
-        TwitterSession session = Twitter.getSessionManager().getActiveSession();
-        final Intent intent = new ComposerActivity.Builder()
-                .session(session)
-                .createIntent();
-        startActivity(intent);
-    }
+//    public void composeMessage(View view) {
+//        TwitterSession session = Twitter.getSessionManager().getActiveSession();
+//        final Intent intent = new ComposerActivity.Builder()
+//                .session(session)
+//                .createIntent();
+//        startActivity(intent);
+//    }
 }
