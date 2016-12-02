@@ -23,6 +23,8 @@ import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.view.inputmethod.EditorInfo;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
@@ -117,6 +119,8 @@ public class LoginActivity extends AppCompatActivity  {
 //        mProgressView = findViewById(R.id.login_progress);
 
         loginButton = (TwitterLoginButton) findViewById(R.id.twitter_login_button);
+        Animation expandIn = AnimationUtils.loadAnimation(this, R.anim.expand_in);
+        loginButton.startAnimation(expandIn);
         loginButton.setCallback(new Callback<TwitterSession>() {
             @Override
             public void success(Result<TwitterSession> result) {
