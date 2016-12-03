@@ -1,5 +1,6 @@
 package vn.edu.usth.twitter;
 
+import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
@@ -18,6 +19,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.twitter.sdk.android.Twitter;
+import com.twitter.sdk.android.core.TwitterCore;
 import com.twitter.sdk.android.core.TwitterSession;
 
 import vn.edu.usth.twitter.Fragment.Home;
@@ -67,9 +69,9 @@ public class TwitterActivity extends AppCompatActivity {
     }
 
     private int[] imageResId = new int[]{
-            R.drawable.home,
-            R.drawable.noti,
-            R.drawable.message
+            R.drawable.home_1,
+            R.drawable.notification,
+            R.drawable.message_1
     };
 
 
@@ -109,7 +111,7 @@ public class TwitterActivity extends AppCompatActivity {
 // returns a tab title corresponding to the specified page
 
             Drawable image = ContextCompat.getDrawable(getApplicationContext(), imageResId[position]);
-            image.setBounds(0, 0, image.getIntrinsicWidth() - 32, image.getIntrinsicHeight() - 32);
+            image.setBounds(0, 0, image.getIntrinsicWidth() - 90, image.getIntrinsicHeight() - 90);
 
             SpannableString sb = new SpannableString(" ");
             ImageSpan imageSpan = new ImageSpan(image, ImageSpan.ALIGN_BOTTOM);
@@ -128,8 +130,12 @@ public class TwitterActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.action_search:
-                // do something when search is pressed here
                 return true;
+            case R.id.action_refresh:
+                final TwitterSession session = TwitterCore.getInstance().getSessionManager()
+                        .getActiveSession();
+                Intent intent = new Intent(this, TwitterActivity.class);
+                startActivity(intent);
             default:
                 return super.onOptionsItemSelected(item);
         }
