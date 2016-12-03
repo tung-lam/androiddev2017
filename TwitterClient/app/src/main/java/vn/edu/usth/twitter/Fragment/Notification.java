@@ -40,32 +40,33 @@ public class Notification extends ListFragment {
         TwitterSession session = Twitter.getSessionManager().getActiveSession();
 
         final List<Tweet> tweets = new ArrayList<>();
-//        android.util.Log.d("Number of tweets: ", String.valueOf(tweets.size()));
-        TwitterCore.getInstance().getApiClient(session).getStatusesService()
-                .mentionsTimeline(null, null, null, null, null, null).enqueue(
-                new Callback<List<Tweet>>() {
-                    @Override
-                    public void success(Result<List<Tweet>> result) {
-                        for (Tweet t : result.data) {
-                            tweets.add(t);
-                            android.util.Log.d("twittercommunity", "tweet is " + t.text);
-                        }
-                        final FixedTweetTimeline fixedTweetTimeline = new FixedTweetTimeline.Builder()
-                                .setTweets(result.data)
-                                .build();
-
-                        final TweetTimelineListAdapter adapter = new TweetTimelineListAdapter.Builder(getActivity())
-                                .setTimeline(fixedTweetTimeline)
-                                .build();
-                        setListAdapter(adapter);
-                    }
-
-                    @Override
-                    public void failure(TwitterException exception) {
-                        android.util.Log.d("twittercommunity", "exception " + exception);
-                    }
+        Callback<List<Tweet>> callback = new Callback<List<Tweet>>() {
+            @Override
+            public void success(Result<List<Tweet>> result) {
+                for (Tweet t : result.data) {
+                    tweets.add(t);
+                    android.util.Log.d("twittercommunity", "tweet is " + t.text);
                 }
-        );
+                final FixedTweetTimeline fixedTweetTimeline = new FixedTweetTimeline.Builder()
+                        .setTweets(tweets)
+                        .build();
+                final TweetTimelineListAdapter adapter = new TweetTimelineListAdapter.Builder(getActivity())
+                        .setTimeline(fixedTweetTimeline)
+                        .setViewStyle(R.style.tw__TweetLightWithActionsStyle)
+                        .build();
+                setListAdapter(adapter);
+            }
+
+            @Override
+            public void failure(TwitterException exception) {
+                android.util.Log.d("twittercommunity", "exception " + exception);
+            }
+        };
+
+        TwitterCore.getInstance().getApiClient(session).getStatusesService()
+                .mentionsTimeline(null, null, null, null, null, null)
+                .enqueue(callback);
+
         android.util.Log.d("Number of tweets: ", String.valueOf(tweets.size()));
     }
 

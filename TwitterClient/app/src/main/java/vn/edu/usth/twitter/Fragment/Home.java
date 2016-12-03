@@ -34,6 +34,7 @@ public class Home extends ListFragment {
 //                .build();
         final TweetTimelineListAdapter adapter = new TweetTimelineListAdapter.Builder(getActivity())
                 .setTimeline(userTimeline)
+                .setViewStyle(R.style.tw__TweetLightWithActionsStyle)
                 .build();
         setListAdapter(adapter);
 
