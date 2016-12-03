@@ -1,23 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item
-        android:id="@+id/nav_profile"
-        android:icon="@drawable/ic_profile"
-        android:title="Profile" />
-    <item
-        android:id="@+id/nav_highlight"
-        android:icon="@drawable/ic_highlight"
-        android:title="Highlights"/>
-    <item
-        android:id="@+id/nav_moment"
-        android:icon="@drawable/ic_moment"
-        android:title="My Moments"/>
-    <item
-        android:id="@+id/nav_list"
-        android:icon="@drawable/ic_list"
-        android:title="List"/>
-    <item
-        android:id="@+id/nav_connect"
-        android:icon="@drawable/ic_connect"
-        android:title="Connect"/>
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_profile"
+            android:title="Profile" />
+        <item
+            android:id="@+id/nav_highlight"
+            android:icon="@drawable/ic_highlight"
+            android:title="Highlights" />
+        <item
+            android:id="@+id/nav_moment"
+            android:icon="@drawable/ic_moment"
+            android:title="My Moments" />
+        <item
+            android:id="@+id/nav_list"
+            android:icon="@drawable/ic_list"
+            android:title="List" />
+        <item
+            android:id="@+id/nav_connect"
+            android:icon="@drawable/ic_connect"
+            android:title="Connect" />
+    </group>
+
+    <item android:title="Settings">
+        <menu>
+            <item
+                android:id="@+id/nav_night_mode"
+                android:title="Night mode" />
+            <item
+                android:id="@+id/nav_QR_code"
+                android:title="QR Code" />
+            <item
+                android:id="@+id/nav_account"
+                android:title="Account" />
+            <item
+                android:id="@+id/nav_help"
+                android:title="Help" />
+            <item
+                android:id="@+id/nav_log_out"
+                android:title="Log out" />
+        </menu>
+    </item>
 </menu>
