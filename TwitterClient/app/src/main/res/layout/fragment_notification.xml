@@ -7,6 +7,13 @@
     android:orientation="vertical"
     android:weightSum="1">
 
+    <ListView android:id="@id/android:list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#e1e8ed"
+        android:dividerHeight="1dp"
+        android:drawSelectorOnTop="false"
+        android:layout_alignParentTop="true" />
 
     <ImageView
         android:id="@+id/tweet"
