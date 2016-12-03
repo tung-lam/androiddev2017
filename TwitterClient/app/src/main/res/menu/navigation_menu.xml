@@ -2,13 +2,24 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/nav_profile"
+        android:icon="@drawable/ic_profile"
         android:title="Profile" />
     <item
         android:id="@+id/nav_highlight"
+        android:icon="@drawable/ic_highlight"
         android:title="Highlights"/>
     <item
         android:id="@+id/nav_moment"
+        android:icon="@drawable/ic_moment"
         android:title="My Moments"/>
+    <item
+        android:id="@+id/nav_list"
+        android:icon="@drawable/ic_list"
+        android:title="List"/>
+    <item
+        android:id="@+id/nav_connect"
+        android:icon="@drawable/ic_connect"
+        android:title="Connect"/>
 
 
 </menu>

@@ -10,6 +10,8 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
+import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.text.Spannable;
@@ -27,6 +29,9 @@ import vn.edu.usth.twitter.Fragment.Message;
 import vn.edu.usth.twitter.Fragment.Notification;
 
 public class TwitterActivity extends AppCompatActivity {
+
+    private DrawerLayout mDrawerLayout;
+    private ActionBarDrawerToggle mToggle;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -66,6 +71,14 @@ public class TwitterActivity extends AppCompatActivity {
 //            }
 //        });
 
+        //Navigation Drawer
+        mDrawerLayout = (DrawerLayout) findViewById(R.id.drawerlayout);
+        mToggle = new ActionBarDrawerToggle(this, mDrawerLayout, R.string.open, R.string.close);
+
+        mDrawerLayout.addDrawerListener(mToggle);
+        mToggle.syncState();
+
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     private int[] imageResId = new int[]{
@@ -128,6 +141,10 @@ public class TwitterActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+        //Toggle to start Navigation Bar
+        if(mToggle.onOptionsItemSelected(item)) {
+            return true;
+        }
         switch (item.getItemId()) {
             case R.id.action_search:
                 return true;
@@ -136,8 +153,10 @@ public class TwitterActivity extends AppCompatActivity {
                         .getActiveSession();
                 Intent intent = new Intent(this, TwitterActivity.class);
                 startActivity(intent);
+
             default:
                 return super.onOptionsItemSelected(item);
         }
     }
+
 }
