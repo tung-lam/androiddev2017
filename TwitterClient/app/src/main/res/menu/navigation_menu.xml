@@ -20,6 +20,4 @@
         android:id="@+id/nav_connect"
         android:icon="@drawable/ic_connect"
         android:title="Connect"/>
-
-
 </menu>
