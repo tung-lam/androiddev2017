@@ -69,9 +69,9 @@ public class TwitterActivity extends AppCompatActivity {
     }
 
     private int[] imageResId = new int[]{
-            R.drawable.home,
-            R.drawable.noti,
-            R.drawable.message
+            R.drawable.home_1,
+            R.drawable.notification,
+            R.drawable.message_1
     };
 
 
@@ -111,7 +111,7 @@ public class TwitterActivity extends AppCompatActivity {
 // returns a tab title corresponding to the specified page
 
             Drawable image = ContextCompat.getDrawable(getApplicationContext(), imageResId[position]);
-            image.setBounds(0, 0, image.getIntrinsicWidth() - 32, image.getIntrinsicHeight() - 32);
+            image.setBounds(0, 0, image.getIntrinsicWidth() - 90, image.getIntrinsicHeight() - 90);
 
             SpannableString sb = new SpannableString(" ");
             ImageSpan imageSpan = new ImageSpan(image, ImageSpan.ALIGN_BOTTOM);
