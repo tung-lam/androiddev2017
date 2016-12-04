@@ -1,6 +1,7 @@
 package vn.edu.usth.twitter.Fragment;
 
 import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -9,6 +10,7 @@ import android.support.v4.app.ListFragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 import com.twitter.sdk.android.Twitter;
 
@@ -18,6 +20,7 @@ import com.twitter.sdk.android.core.TwitterCore;
 import com.twitter.sdk.android.core.TwitterException;
 import com.twitter.sdk.android.core.TwitterSession;
 import com.twitter.sdk.android.core.models.Tweet;
+import com.twitter.sdk.android.tweetcomposer.ComposerActivity;
 import com.twitter.sdk.android.tweetui.FixedTweetTimeline;
 import com.twitter.sdk.android.tweetui.SearchTimeline;
 import com.twitter.sdk.android.tweetui.Timeline;
@@ -75,6 +78,18 @@ public class Notification extends ListFragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_notification, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_notification, container, false);
+        ImageView view = (ImageView) rootView.findViewById(R.id.tweet);
+        view.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                TwitterSession session = Twitter.getSessionManager().getActiveSession();
+                final Intent intent = new ComposerActivity.Builder(getActivity())
+                        .session(session)
+                        .createIntent();
+                startActivity(intent);
+            }
+        });
+        return rootView;
     }
 }
