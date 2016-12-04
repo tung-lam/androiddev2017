@@ -69,8 +69,6 @@ public class Notification extends ListFragment {
         TwitterCore.getInstance().getApiClient(session).getStatusesService()
                 .mentionsTimeline(null, null, null, null, null, null)
                 .enqueue(callback);
-
-        android.util.Log.d("Number of tweets: ", String.valueOf(tweets.size()));
     }
 
 

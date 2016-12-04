@@ -48,6 +48,7 @@ public class TwitterActivity extends AppCompatActivity {
         pager.setAdapter(adapter);
 
         final Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
+        myToolbar.setTitleTextColor(getResources().getColor(R.color.blue));
         setSupportActionBar(myToolbar);
 
         tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
