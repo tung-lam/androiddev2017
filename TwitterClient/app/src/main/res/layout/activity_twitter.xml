@@ -27,7 +27,8 @@
             android:id="@+id/tab"
             android:layout_width="match_parent"
             android:layout_height="52dp"
-            style="@style/MyCustomTabLayout" />
+            style="@style/MyCustomTabLayout"
+            app:tabIndicatorColor="#0099e6" />
 
         <android.support.v4.view.ViewPager
             android:id="@+id/pager"

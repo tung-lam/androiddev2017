@@ -28,6 +28,8 @@ import vn.edu.usth.twitter.Fragment.Home;
 import vn.edu.usth.twitter.Fragment.Message;
 import vn.edu.usth.twitter.Fragment.Notification;
 
+import static vn.edu.usth.twitter.R.id.tab;
+
 public class TwitterActivity extends AppCompatActivity {
 
     private DrawerLayout mDrawerLayout;
@@ -38,10 +40,11 @@ public class TwitterActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_twitter);
 
+
         PagerAdapter adapter = new HomeFragmentPagerAdapter(getSupportFragmentManager());
         ViewPager pager = (ViewPager) findViewById(R.id.pager);
 
-        TabLayout tabLayout = (TabLayout) findViewById(R.id.tab);
+        TabLayout tabLayout = (TabLayout) findViewById(tab);
         tabLayout.setupWithViewPager(pager);
 
         pager.setOffscreenPageLimit(3);
@@ -84,10 +87,8 @@ public class TwitterActivity extends AppCompatActivity {
     private int[] imageResId = new int[]{
             R.drawable.home_1,
             R.drawable.notification,
-            R.drawable.message_1
+            R.drawable.message
     };
-
-
 
     public class HomeFragmentPagerAdapter extends FragmentPagerAdapter {
         private final int PAGE_COUNT = 3;
@@ -104,8 +105,6 @@ public class TwitterActivity extends AppCompatActivity {
 
         @Override
         public Fragment getItem(int page) {
-//            return new Home();
-// returns an instance of vn.edu.usth.weather.Fragment corresponding to the specified page
             switch (page) {
                 case 0:
                     return new Home();
@@ -158,5 +157,4 @@ public class TwitterActivity extends AppCompatActivity {
                 return super.onOptionsItemSelected(item);
         }
     }
-
 }
