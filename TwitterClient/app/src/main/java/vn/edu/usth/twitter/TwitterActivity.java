@@ -39,16 +39,46 @@ public class TwitterActivity extends AppCompatActivity {
         setContentView(R.layout.activity_twitter);
 
         PagerAdapter adapter = new HomeFragmentPagerAdapter(getSupportFragmentManager());
-        ViewPager pager = (ViewPager) findViewById(R.id.pager);
+        final ViewPager pager = (ViewPager) findViewById(R.id.pager);
 
-        TabLayout tabLayout = (TabLayout) findViewById(R.id.tab);
+        final TabLayout tabLayout = (TabLayout) findViewById(R.id.tab);
         tabLayout.setupWithViewPager(pager);
 
         pager.setOffscreenPageLimit(3);
         pager.setAdapter(adapter);
 
-        Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
+        final Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
         setSupportActionBar(myToolbar);
+
+        tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+            @Override
+            public void onTabSelected(TabLayout.Tab tab) {
+                switch (tab.getPosition()) {
+                    case 0:
+                        myToolbar.setTitle("Home");
+                        break;
+                    case 1:
+                        myToolbar.setTitle("Notification");
+                        break;
+                    case 2:
+                        myToolbar.setTitle("Message");
+                        break;
+                    default:
+                        myToolbar.setTitle("Twitter Client");
+                        break;
+                }
+            }
+
+            @Override
+            public void onTabUnselected(TabLayout.Tab tab) {
+
+            }
+
+            @Override
+            public void onTabReselected(TabLayout.Tab tab) {
+
+            }
+        });
 
         final TwitterSession session = Twitter.getSessionManager().getActiveSession();
 
