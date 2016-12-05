@@ -5,10 +5,10 @@
         android:id="@+id/action_refresh"
         android:icon="@drawable/ic_refresh"
         android:title="Refresh"
-        app:showAsAction="ifRoom"/>
+        app:showAsAction="ifRoom" />
     <item
         android:id="@+id/action_search"
         android:icon="@drawable/magnifier"
-        android:title="Refresh"
+        android:title="Search"
         app:showAsAction="ifRoom"/>
 </menu>

@@ -113,9 +113,9 @@ public class TwitterActivity extends AppCompatActivity {
     }
 
     private int[] imageResId = new int[]{
-            R.drawable.home_1,
+            R.drawable.home,
             R.drawable.notification,
-            R.drawable.message_1
+            R.drawable.message
     };
 
 
