@@ -9,7 +9,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="#3399ff"
+    android:background="#1a8cff"
     tools:context="vn.edu.usth.twitter.LoginActivity">
 
     <!-- Login progress -->
@@ -18,18 +18,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <TextView
-            android:text="Welcome to Twitter!"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView2"
-            android:layout_marginBottom="65dp"
-            android:layout_above="@+id/twitter_login_button"
-            android:textSize="50sp"
-            android:layout_alignLeft="@+id/twitter_login_button"
-            android:layout_alignStart="@+id/twitter_login_button"
-            android:textColor="@color/tw__composer_white" />
-
         <com.twitter.sdk.android.core.identity.TwitterLoginButton
                     android:id="@+id/twitter_login_button"
                     android:layout_width="wrap_content"
@@ -37,5 +25,34 @@
             android:layout_marginBottom="139dp"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:text="Welcome to Twitter"
+            android:fontFamily="sans-serif-medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:textSize="55sp"
+            android:textColor="@color/tw__composer_white"
+            android:layout_marginTop="69dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="26dp"
+            android:layout_marginStart="26dp" />
+
+        <TextView
+            android:text="See what's happening in the world right now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/tw__composer_white"
+            android:id="@+id/textView4"
+            android:layout_marginTop="36dp"
+            android:layout_below="@+id/textView2"
+            android:layout_alignLeft="@+id/textView2"
+            android:layout_alignStart="@+id/textView2" />
+
     </RelativeLayout>
 </LinearLayout>

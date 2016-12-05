@@ -118,8 +118,6 @@ public class TwitterActivity extends AppCompatActivity {
             R.drawable.message
     };
 
-
-
     public class HomeFragmentPagerAdapter extends FragmentPagerAdapter {
         private final int PAGE_COUNT = 3;
         private String titles[] = new String[]{"Home", "Notification", "Message"};
