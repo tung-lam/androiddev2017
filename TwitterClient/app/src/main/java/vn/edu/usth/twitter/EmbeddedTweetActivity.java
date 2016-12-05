@@ -32,7 +32,8 @@ public class EmbeddedTweetActivity extends AppCompatActivity {
         TweetUtils.loadTweet(tweetId, new Callback<Tweet>() {
             @Override
             public void success(Result<Tweet> result) {
-                TweetView tweetView = new TweetView(EmbeddedTweetActivity.this, result.data);
+                TweetView tweetView = new TweetView(EmbeddedTweetActivity.this, result.data,
+                        R.style.tw__TweetDarkWithActionsStyle);
                 parentView.addView(tweetView);
             }
             @Override

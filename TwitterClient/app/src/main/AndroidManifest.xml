@@ -33,6 +33,7 @@
                 <!--<category android:name="android.intent.category.LAUNCHER" />-->
             <!--</intent-filter>-->
         </activity>
+        <activity android:name=".EmbeddedTweetActivity"></activity>
         <meta-data
             android:name="io.fabric.ApiKey"
             android:value="505c3c24f2365aae3a205f3db06b323c614632a4" />

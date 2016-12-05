@@ -9,6 +9,7 @@
         android:id="@+id/bike_tweet"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        style="@style/tw__TweetDarkWithActionsStyle"
         twittersdk:tw__tweet_id="510908133917487104"/>
 
 </FrameLayout>
